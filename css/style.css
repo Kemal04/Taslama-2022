@@ -1,0 +1,209 @@
+.bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+}
+
+.nav-link:hover {
+    color: #779156 !important;
+}
+
+.nav-link {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    /* FIXED TOP ULANYLANDA AC */
+    right: 0;
+    width: 0;
+    bottom: 0;
+    background: #779156;
+    height: 1px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.nav-link:hover:after, .nav-link:focus:after, .nav-link:active:after {
+    left: 10px;
+    right: auto;
+    width: 80%;
+}
+
+.bg-green {
+    background-color: #9bba58;
+}
+
+.text-green {
+    background-color: #9bba58;
+}
+
+.bg-dark-green {
+    background-color: #779156;
+}
+
+.text-dark-green {
+    background-color: #779156;
+}
+
+.video-img {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.video-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;
+}
+
+.video-img video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+.card1 {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card1:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card1:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #303030;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: .8em;
+    color: #000;
+}
+
+.card__status {
+    font-size: .8em;
+    color: #000;
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #000;
+    font-family: "MockFlowFont";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.footer-bg{
+    background: url('../img/footer-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.price{
+    background-color: #fff;
+    border: 5px solid #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.price:hover{
+    transition: 0.3s;
+    background-color: #9bba58;
+    color: #fff;
+}
+
+.text-14{
+    font-size: 14px;
+}
+
+.hover-shadow:hover{
+    box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important;
+    transition: 0.3s;
+}
