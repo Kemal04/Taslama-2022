@@ -1,0 +1,26 @@
+(function ($) {
+    "use strict";
+
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass('nav-sticky');
+        } else {
+            $('.navbar').removeClass('nav-sticky');
+        }
+    });
+
+})(jQuery);
+
+new Splide('#slider', {
+    type: 'loop',
+    perPage: 4,
+    perMove: 1,
+    pagination: false,
+    breakpoints:
+    {
+        991: { perPage: 4, gap: '1.5rem', },
+        768: { perPage: 3, gap: '1.5rem', },
+        575: { perPage: 1, gap: '1rem', },
+    }
+}).mount();
