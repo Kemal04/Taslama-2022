@@ -119,11 +119,27 @@
                 <h2 class="mb-4 font-weight-bold">Recent Sermons</h2>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
-                <div class="service text-center">
-                    <img src="{{ asset('img/icons/seed.svg') }}" class="img-fluid">
-                    <h3 class="heading">Praise and Worship</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                    <p><a href="#" class="more">+ Read more</a></p>
+                <div class="text-center">
+                    <img src="{{ asset('img/icons/seed.svg') }}" class="img-fluid w-25 mb-3">
+                    <div style="font-size: 18px; font-weight: 700;">Praise and Worship</div>
+                    <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <p><a href="#" class="text-green text-decoration-none">+ Read more</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
+                <div class="text-center">
+                    <img src="{{ asset('img/icons/water.svg') }}" class="img-fluid w-25 mb-3">
+                    <div style="font-size: 18px; font-weight: 700;">Praise and Worship</div>
+                    <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <p><a href="#" class="text-green text-decoration-none">+ Read more</a></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
+                <div class="text-center">
+                    <img src="{{ asset('img/icons/tree.svg') }}" class="img-fluid w-25 mb-3">
+                    <div style="font-size: 18px; font-weight: 700;">Praise and Worship</div>
+                    <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <p><a href="#" class="text-green text-decoration-none">+ Read more</a></p>
                 </div>
             </div>
         </div>
@@ -163,7 +179,7 @@
                 </div>
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="w-50">
-                        <a href="" class="btn btn-lg btn-block bg-basic text-white font-weight-bolder">BAGIS YAP</a>
+                        <a href="" class="btn btn-lg btn-block bg-green text-white font-weight-bolder">BAGIS YAP</a>
                     </div>
                 </div>
             </div>

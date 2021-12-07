@@ -1,4 +1,4 @@
-<div class="py-5 bg-basic">
+<div class="py-5 bg-green">
     <div class="container">
         <div class="row text-white">
             <div class="col-lg-3 col-md-3 col-sm-3 col-6">
