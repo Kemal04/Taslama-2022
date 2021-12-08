@@ -75,8 +75,20 @@
     </div>
 
     <div class="container my-5 py-5">
-        <div id="columnchart_material" style="width: 900px; height: 300px;"></div>
-
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div id="columnchart_material" class="" style="width: 100%; height: 300px;"></div>
+            </div>
+            <div class="col-lg-6 text-center d-flex justify-content-end">
+                <div class="w-75">
+                    <div class="h1">Header</div>
+                    <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis esse deserunt tempore. Aperiam vitae voluptatum quas sit eligendi deleniti in enim minus suscipit, aliquam inventore error, hic, esse vero?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis esse deserunt tempore. Aperiam vitae voluptatum quas sit eligendi deleniti in enim minus suscipit, aliquam inventore error, hic, esse vero?
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -98,10 +110,7 @@
             ]);
 
             var options = {
-                chart: {
-                    title: 'Company Performance',
-                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-                },
+                chart: {},
                 backgroundColor: '#f6f2ef'
             };
 

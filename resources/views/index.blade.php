@@ -55,7 +55,7 @@
             @foreach($mains as $main)
             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
                 <div class="card border-0 mr-4" style="background-color: transparent;">
-                    <img src="{{ asset( $main->img ) }}" alt="">
+                    <img src="{{ asset( $main->img ) }}" class="img-fluid">
                     <div class="card-body p-0 my-3">
                         <span class="text-secondary mb-2 d-block">15 Jan 2020 <span class="mx-2">•</span> By Pastor Campbell </span>
                         <div class="my-3 h5">{{ $main->name }}</div>

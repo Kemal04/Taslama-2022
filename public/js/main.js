@@ -12,15 +12,8 @@
 
 })(jQuery);
 
-new Splide('#slider', {
-    type: 'loop',
-    perPage: 4,
-    perMove: 1,
+new Splide('.world-tab-1', {
+    arrows: false,
     pagination: false,
-    breakpoints:
-    {
-        991: { perPage: 4, gap: '1.5rem', },
-        768: { perPage: 3, gap: '1.5rem', },
-        575: { perPage: 1, gap: '1rem', },
-    }
+    type: "loop",
 }).mount();
