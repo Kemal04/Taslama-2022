@@ -12,86 +12,102 @@
     @include('app.navbar')
 
 
-    <section class="banner-img-show"></section>
+    <section class="about-banner"></section>
 
-    <div class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div id="circle" style="width: 100%; border: 3px solid white; border-radius: 20px;"></div>
-            </div>
-            <div class="col-lg-6">
-                <div class="display-4">Header</div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero est, saepe ex possimus quidem consectetur eius excepturi odit maiores labore repellendus inventore quia perspiciatis officia porro eligendi velit amet!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut eos, asperiores aliquam eligendi amet necessitatibus. 
-                    <br><br>
-                    Quod sed enim nam ad delectus? Necessitatibus optio recusandae, quae illo fuga numquam voluptatum! Possimus!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur facilis quam qui iure voluptatum ut necessitatibus, temporibus, unde ratione, aperiam veniam nemo ex id corrupti itaque quo? Quia, nulla.   
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero est, saepe ex possimus quidem consectetur eius excepturi odit maiores labore repellendus inventore quia perspiciatis officia porro eligendi velit amet!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut eos, asperiores aliquam eligendi amet necessitatibus. Quod sed enim nam ad delectus? Necessitatibus optio recusandae, quae illo fuga numquam voluptatum! Possimus!
-                </p>
+    <div class="container-fluid my-5 py-5 d-flex justify-content-center">
+        <div class="w-75">
+            <div class="row">
+
+                <div class="col-lg-3 col-6">
+                    <div class="rounded shadow d-block mb-3 position-relative bg-info text-white ">
+                        <div class="inner p-2">
+                            <h3>150</h3>
+                            <p>New Orders</p>
+                        </div>
+                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
+                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
+                        </div>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="rounded shadow d-block mb-3 position-relative bg-warning text-white ">
+                        <div class="inner p-2">
+                            <h3>150</h3>
+                            <p>New Orders</p>
+                        </div>
+                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
+                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
+                        </div>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="rounded shadow d-block mb-3 position-relative bg-success text-white ">
+                        <div class="inner p-2">
+                            <h3>150</h3>
+                            <p>New Orders</p>
+                        </div>
+                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
+                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
+                        </div>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="rounded shadow d-block mb-3 position-relative bg-danger text-white ">
+                        <div class="inner p-2">
+                            <h3>150</h3>
+                            <p>New Orders</p>
+                        </div>
+                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
+                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
+                        </div>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
+    <div class="container my-5 py-5">
+        <div id="columnchart_material" style="width: 900px; height: 300px;"></div>
 
-
-
-
-
+    </div>
 
 
 
     <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
-
     <script type="text/javascript">
-        var data;
-        var chart;
         google.charts.load('current', {
-            'packages': ['corechart']
+            'packages': ['bar']
         });
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-
-            // Create our data table.
-            data = new google.visualization.DataTable();
-            data.addColumn('string', 'Topping');
-            data.addColumn('number', 'Slices');
-            data.addRows([
-                ['2021', 3],
-                ['2020', 2],
-                ['2019', 1.5],
-                ['2018', 1],
-                ['2017', 1],
-                ['2016', 1],
-                ['2015', 1],
-                ['2014', 1],
-                ['2013', 1],
-                ['2012', 1],
-                ['2011', 1],
-                ['2010', 0.1]
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Agac sanlary', 'howanyn hapalygy', 'arassa howwa'],
+                ['2014', 1000, 400, 200],
+                ['2015', 1170, 460, 250],
+                ['2016', 660, 1120, 300],
+                ['2017', 1030, 540, 350]
             ]);
 
-            // Set chart options
             var options = {
-                'title': 'Ýurdumyzdaky agaçlaryň her ýyla görä üýtgeýşi',
-                'width': 500,
-                'height': 450,
-                'backgroundColor': '#f6f2ef',
+                chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                },
+                backgroundColor: '#f6f2ef'
             };
 
-            // Instantiate and draw our chart, passing in some options.
-            chart = new google.visualization.PieChart(document.getElementById('circle'));
-            google.visualization.events.addListener(chart, 'select', selectHandler);
-            chart.draw(data, options);
-        }
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-        function selectHandler() {
-            var selectedItem = chart.getSelection()[0];
-            var value = data.getValue(selectedItem.row, 0);
-            alert('The user selected ' + value);
+            chart.draw(data, google.charts.Bar.convertOptions(options));
         }
     </script>
     @include('app.footer')

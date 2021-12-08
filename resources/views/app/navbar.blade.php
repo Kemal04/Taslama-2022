@@ -15,11 +15,11 @@
                 <a href="{{ route('contact') }}" class="nav-item nav-link">HABARLAŞMAK</a>
             </div>
             @guest
-                <a class="btn btn-outline-light ml-5" style="border-radius: 30px;" href="{{ route('login') }}">
-                    Login
+                <a class="btn btn-green ml-5" style="border-radius: 30px;" href="{{ route('login') }}">
+                    Register
                 </a>
             @else
-                <a clas  s="btn btn-outline-light ml-5 dropdown-toggle" style="border-radius: 30px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ auth()->user()->name }}</a>
+                <a class="btn btn-green ml-5 dropdown-toggle" style="border-radius: 30px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ auth()->user()->name }}</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     @if(auth()->user()->is_admin)
                         <a class="dropdown-item" href="">

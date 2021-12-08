@@ -147,42 +147,44 @@
 
     <div class="footer-bg py-5 mt-5">
         <div class="container py-5">
-            <div class="row align-items-center text-center justify-content-center">
-                <div class="col-lg-12 mb-5 display-4 border-bottom pb-3">
-                    BAĞIŞÇIMIZ OLUN
-                </div>
-                <div class="col-lg-12 h5 mb-5 font-weight-normal">
-                    Başta toprak olmak üzere tüm doğal varlıklarımızı korumak için yürüttüğümüz çalışmalara destek
-                    olun.
-                </div>
-                <div class="form-item">
-                    <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
-                        <input id="amount-20" type="radio" name="amountValue" value="20" checked="true">
-                        <label for="amount-20">20 ₺</label>
+            <form action="" method="post">
+                <div class="row align-items-center text-center justify-content-center">
+                    <div class="col-lg-12 mb-5 display-4 border-bottom pb-3">
+                        BAĞIŞÇIMIZ OLUN
                     </div>
-                    <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
-                        <input id="amount-50" type="radio" name="amountValue" value="50">
-                        <label for="amount-50">50 ₺</label>
+                    <div class="col-lg-12 h5 mb-5 font-weight-normal">
+                        Başta toprak olmak üzere tüm doğal varlıklarımızı korumak için yürüttüğümüz çalışmalara destek
+                        olun.
                     </div>
-                    <div class="radio-item">
-                        <input id="amount-100" type="radio" name="amountValue" value="100">
-                        <label for="amount-100">100 ₺</label>
+                    <div class="form-item">
+                        <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
+                            <input id="amount-20" type="radio" name="amountValue" value="20" checked="true">
+                            <label for="amount-20">20 ₺</label>
+                        </div>
+                        <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
+                            <input id="amount-50" type="radio" name="amountValue" value="50">
+                            <label for="amount-50">50 ₺</label>
+                        </div>
+                        <div class="radio-item">
+                            <input id="amount-100" type="radio" name="amountValue" value="100">
+                            <label for="amount-100">100 ₺</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 my-4">
+                        veya
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="input-group mb-3 w-50">
+                            <input type="number" name="price" class="form-control" style="padding: 26px 20px!important;" placeholder="Bahasy" aria-label="Bahasy" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="w-50">
+                            <button type="submit" class="btn btn-lg btn-block bg-green text-white font-weight-bolder">BAGIS YAP</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 my-4">
-                    veya
-                </div>
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="input-group mb-3 w-50">
-                        <input type="number" name="price" class="form-control" style="padding: 26px 20px!important;" placeholder="Bahasy" aria-label="Bahasy" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <div class="w-50">
-                        <a href="" class="btn btn-lg btn-block bg-green text-white font-weight-bolder">BAGIS YAP</a>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 
