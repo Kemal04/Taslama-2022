@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ForeignController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ThreemainController;
@@ -27,8 +28,7 @@ Route::get('/tebigaty-gormak/{id}', [ThreemainController::class, 'show'])->name(
 
 Route::get('/biz-barada', [AboutController::class, 'index'])->name('about.index');
 Route::get('/biz-barada/statistika', [AboutController::class, 'statik'])->name('about.statik');
-Route::get('/biz-barada/dasary-yurlardaky-maglumatlar', [AboutController::class, 'foreign'])->name('about.foreign');
 Route::get('/biz-barada/yurdumyzdaky-maglumatlar', [AboutController::class, 'ourcountry'])->name('about.ourcountry');
 
-
+Route::get('/biz-barada/dasary-yurlardaky-maglumatlar', [ForeignController::class, 'index'])->name('foreign.index');
 

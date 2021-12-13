@@ -25,7 +25,7 @@ class AboutController extends Controller
 
     public function foreign()
     {
-        return view('about.foreign');
+        return view('foreign.index');
     }
 
     public function ourcountry()

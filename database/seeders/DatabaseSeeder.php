@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ThreemainSeeder::class);
 
         $this->call(GallerySeeder::class);
+
+        $this->call(CountrySeeder::class);
+
+        $this->call(ForeignSeeder::class);
     }
 }

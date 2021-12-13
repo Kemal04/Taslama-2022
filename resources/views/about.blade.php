@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left">
-                    <img src="{{ asset('img/cards/banner-card.webp') }}" class="img-fluid w-75">
+                    <img src="{{ asset('img/cards/banner-card.JPG') }}" class="img-fluid w-75">
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                         <div class="my-3 h5">Statik</div>
                         <p class="mb-3 text-secondary">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi et, voluptatum veritatis nemo sapiente nostrum delectus, </p>
-                        <a href="{{ route('about.foreign') }}" class="btn btn-green">More Information</a>
+                        <a href="{{ route('foreign.index') }}" class="btn btn-green">More Information</a>
                     </div>
                 </div>
             </div>

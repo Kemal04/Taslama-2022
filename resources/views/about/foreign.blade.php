@@ -22,25 +22,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" id="tab1" data-toggle="tab" href="#world-tab-1" role="tab" aria-controls="world-tab-1" aria-selected="true">All</a>
                     </li>
+                    @foreach($countries as $country)
                     <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab2" data-toggle="tab" href="#world-tab-2" role="tab" aria-controls="world-tab-2" aria-selected="false">Style hunter</a>
+                        <a class="nav-link text-dark" id="{{ $country->id }}" data-toggle="tab" href="#a{{ $country->id }}" role="tab" aria-controls="{{ $country->id }}" aria-selected="false">{{ $country->name }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab3" data-toggle="tab" href="#world-tab-3" role="tab" aria-controls="world-tab-3" aria-selected="false">Vogue</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab4" data-toggle="tab" href="#world-tab-4" role="tab" aria-controls="world-tab-4" aria-selected="false">Health &amp; Fitness</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab5" data-toggle="tab" href="#world-tab-5" role="tab" aria-controls="world-tab-5" aria-selected="false">Travel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab6" data-toggle="tab" href="#world-tab-6" role="tab" aria-controls="world-tab-6" aria-selected="false">Gadgets</a>
-                    </li>
+                    @endforeach
                 </ul>
                 <div class="tab-content my-3" id="myTabContent">
                     <div class="tab-pane fade active show" id="world-tab-1" role="tabpanel" aria-labelledby="tab1">
-                        <div class="row">
+                        <div class="row border-bottom mb-3">
                             <div class="col-lg-6">
                                 <div class="splide world-tab-1">
                                     <div class="splide__track">
@@ -134,9 +124,234 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="card border-0" style="background-color: transparent;">
+                                <img src="{{ asset('img/cards/world.jpg') }}" class="card-img">
+                                <div class="card-body px-0">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <div class="h3">Header</div>
+                                        <span class="text-small text-muted">Katy Liu on Sep 29, 2017 at 9:48 amet</span>
+                                    </div>
+                                    <p class="text-dark">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit sunt fuga, hic sit repellat? Quis, quod. Quaerat, aspernatur? Autem beatae reprehenderit ut ea similique nihil iusto magnam ullam nobis.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit sunt fuga, hic sit repellat? Quis, quod. Quaerat, aspernatur? Autem beatae reprehenderit ut ea similique nihil iusto magnam ullam nobis.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit sunt fuga, hic sit repellat? Quis, quod. Quaerat, aspernatur? Autem beatae reprehenderit ut ea similique nihil iusto magnam ullam nobis.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit sunt fuga, hic sit repellat? Quis, quod. Quaerat, aspernatur? Autem beatae reprehenderit ut ea similique nihil iusto magnam ullam nobis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                                <div class="splide world-tab-2">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide mr-3">
+                                                <div class="card">
+                                                    <img src="{{ asset('img/small-img/4.jpg') }}" class="img-fluid">
+                                                    <div class="card-body">
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
+                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide mr-3">
+                                                <div class="card">
+                                                    <img src="{{ asset('img/small-img/2.jpg') }}" class="img-fluid">
+                                                    <div class="card-body">
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
+                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide mr-3">
+                                                <div class="card">
+                                                    <img src="{{ asset('img/small-img/3.jpg') }}" class="img-fluid">
+                                                    <div class="card-body">
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
+                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/5.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="world-tab-2" role="tabpanel" aria-labelledby="tab2">
-                        2131
+                    <div class="tab-pane fade" id="a1" role="tabpanel" aria-labelledby="1">
+                        @foreach($foreigns as $foreign)
+                        @if ($foreign->country_id == 1)
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <img src="{{ asset($foreign->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $foreign->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3">{{ $foreign->title }}</p>
+                                            <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/5.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @endif
+                        @endforeach
+                    </div>
+
+                    <div class="tab-pane fade" id="a2" role="tabpanel" aria-labelledby="2">
+                        @foreach($foreigns as $foreign)
+                        @if ($foreign->country_id == 2)
+
+                        {{ $foreign->country_id }}
+
+                        @endif
+                        @endforeach
+                    </div>
+
+                    <div class="tab-pane fade" id="a3" role="tabpanel" aria-labelledby="3">
+                        @foreach($foreigns as $foreign)
+                        @if ($foreign->country_id == 3)
+
+                        {{ $foreign->country_id }}
+
+                        @endif
+                        @endforeach
+                    </div>
+
+                    <div class="tab-pane fade" id="a4" role="tabpanel" aria-labelledby="4">
+                        @foreach($foreigns as $foreign)
+                        @if ($foreign->country_id == 4)
+
+                        {{ $foreign->country_id }}
+
+                        @endif
+                        @endforeach
+                    </div>
+
+                    <div class="tab-pane fade" id="a5" role="tabpanel" aria-labelledby="5">
+                        @foreach($foreigns as $foreign)
+                        @if ($foreign->country_id == 5)
+
+                        {{ $foreign->country_id }}
+
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -205,8 +420,13 @@
                 <div class="border-bottom pl-4 py-3">
                     <div class="h5">Top Blok</div>
                 </div>
-                <div class="border-bottom pl-4 py-3">
-                    Soial meida
+                <div class="border-bottom pl-4 py-3 d-flex justify-content-between">
+                    <img src="{{ asset('img/icons/telegram.svg') }}" class="img-fluid" style="width: 36px;">
+                    <img src="{{ asset('img/icons/youtube.svg') }}" class="img-fluid" style="width: 36px;">
+                    <img src="{{ asset('img/icons/tweter.svg') }}" class="img-fluid" style="width: 36px;">
+                    <img src="{{ asset('img/icons/instagram.svg') }}" class="img-fluid" style="width: 36px;">
+                    <img src="{{ asset('img/icons/tiktok.svg') }}" class="img-fluid" style="width: 36px;">
+                    <img src="{{ asset('img/icons/message.svg') }}" class="img-fluid" style="width: 36px;">
                 </div>
                 <div class="border-bottom pl-4 py-3">
                     <div class="h5">Top Blok</div>

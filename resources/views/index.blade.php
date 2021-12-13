@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left">
-                    <img src="{{ asset('img/cards/banner-card.webp') }}" class="img-fluid w-75">
+                    <img src="{{ asset('img/cards/banner-card.JPG') }}" class="img-fluid w-75">
                 </div>
             </div>
         </div>
