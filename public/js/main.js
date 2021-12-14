@@ -12,6 +12,27 @@
 
 })(jQuery);
 
+new Splide('#main-slider', {
+    type: 'loop',
+    perPage: 3,
+    perMove: 1,
+    pagination: false,
+    breakpoints: {
+        991: {
+            perPage: 3,
+            gap: '1.5rem',
+        },
+        768: {
+            perPage: 2,
+            gap: '1.5rem',
+        },
+        575: {
+            perPage: 1,
+            gap: '1rem',
+        },
+    }
+}).mount();
+
 new Splide('.world-tab-1', {
     arrows: false,
     pagination: false,
@@ -47,3 +68,4 @@ new Splide('.usa-4', {
     pagination: false,
     type: "loop",
 }).mount();
+

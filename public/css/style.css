@@ -35,7 +35,7 @@
 }
 
 .about-banner {
-    background: url('../img/banners/show.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banners/fixed-banner-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

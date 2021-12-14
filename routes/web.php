@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ForeignController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ThreemainController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +23,9 @@ require __DIR__ . '/auth.php';
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/galereya', [GalleryController::class, 'gallery'])->name('gallery');
 
-Route::get('/habarlasmak', [HomeController::class, 'contact'])->name('contact');
+Route::get('/habarlasmak', [ContactController::class, 'contact'])->name('contact');
+Route::get('/habarlasmak/ugrat', [ContactController::class, 'create'])->name('contact.create');
+Route::post('/habarlasmak/ugrat', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/tebigaty-gormak/{id}', [ThreemainController::class, 'show'])->name('main.show');
 

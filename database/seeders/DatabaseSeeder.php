@@ -24,5 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CountrySeeder::class);
 
         $this->call(ForeignSeeder::class);
+
+        $this->call(ContactSeeder::class);
     }
 }

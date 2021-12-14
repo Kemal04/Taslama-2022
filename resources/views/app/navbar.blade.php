@@ -12,6 +12,8 @@
             <div class="navbar-nav ml-auto ">
                 <a href="{{ route('index') }}" class="nav-item nav-link">BAŞ SAHYPA</a>
                 <a href="{{ route('about.index') }}" class="nav-item nav-link">BIZ BARADA</a>
+                <a href="{{ route('gallery') }}" class="nav-item nav-link">GALLERY</a>
+                <a href="{{ route('foreign.index') }}" class="nav-item nav-link">DÜNÝÄDEKI TÄZELIKLER</a>
                 <a href="{{ route('contact') }}" class="nav-item nav-link">HABARLAŞMAK</a>
             </div>
             @guest
