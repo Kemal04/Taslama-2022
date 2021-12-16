@@ -25,7 +25,7 @@
 
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/banners/banner-1.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/about/ourcountry/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,9 +112,9 @@
 .form-item .radio-item input[type='radio']~label {
     position: relative;
     display: inline-block;
-    padding: 0px 30px;
+    padding: 10px 30px;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.19em;
     color: #211F20;
     text-align: center;

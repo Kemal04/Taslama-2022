@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Foreign;
+use App\Models\City;
 use Illuminate\Database\Seeder;
 
-class ForeignSeeder extends Seeder
+class CitySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,47 +14,53 @@ class ForeignSeeder extends Seeder
      */
     public function run()
     {
-        $obj = new Foreign;
-        $obj->country_id = '1';
-        $obj->img = ('img/foreign/usa/usa-1.jpg');
+        $obj = new City;
+        $obj->welayat_id = '1';
+        $obj->img = ('img/about/ourcountry/card.jpg');
         $obj->name = 'How Did van Gogh’s Turbulent Mind Depict One of the Most';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
 
-        $obj = new Foreign;
-        $obj->country_id = '1';
-        $obj->img = ('img/foreign/usa/usa-3.jpg');
-        $obj->name = 'ucinji';
+        $obj = new City;
+        $obj->welayat_id = '1';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Ashgabat';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
 
-        $obj = new Foreign;
-        $obj->country_id = '2';
-        $obj->img = ('img/foreign/cards/england-1.jpg');
-        $obj->name = 'England';
+        $obj = new City;
+        $obj->welayat_id = '2';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Ahal';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
 
-        $obj = new Foreign;
-        $obj->country_id = '3';
-        $obj->img = ('img/foreign/cards/england-1.jpg');
-        $obj->name = 'England';
+        $obj = new City;
+        $obj->welayat_id = '3';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Balkan';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
 
-        $obj = new Foreign;
-        $obj->country_id = '4';
-        $obj->img = ('img/foreign/cards/england-1.jpg');
-        $obj->name = 'England';
+        $obj = new City;
+        $obj->welayat_id = '4';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Dashoguz';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
 
-        $obj = new Foreign;
-        $obj->country_id = '5';
-        $obj->img = ('img/foreign/cards/england-1.jpg');
-        $obj->name = 'England';
+        $obj = new City;
+        $obj->welayat_id = '5';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Mary';
+        $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
+        $obj->save();
+
+        $obj = new City;
+        $obj->welayat_id = '6';
+        $obj->img = ('img/about/ourcountry/card.jpg');
+        $obj->name = 'Lebap';
         $obj->title = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.';
         $obj->save();
     }
 }
- 

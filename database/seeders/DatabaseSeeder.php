@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Welayat;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -26,5 +27,9 @@ class DatabaseSeeder extends Seeder
         $this->call(ForeignSeeder::class);
 
         $this->call(ContactSeeder::class);
+
+        $this->call(WelayatSeeder::class);
+
+        $this->call(CitySeeder::class);
     }
 }

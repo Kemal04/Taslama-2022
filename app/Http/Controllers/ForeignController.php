@@ -21,4 +21,15 @@ class ForeignController extends Controller
             'countries' => $countries,
         ]);
     }
+
+    public function show($id)
+    {
+        $foreign = Foreign::whereId($id)
+            ->firstOrFail();
+
+        return view('about.foreign-show')->with([
+            'foreign' => $foreign,
+        ]);
+    }
+
 }

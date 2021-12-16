@@ -18,7 +18,7 @@
             </div>
             @guest
                 <a class="btn btn-green ml-5" style="border-radius: 30px;" href="{{ route('login') }}">
-                    Register
+                    HASAP AÇ
                 </a>
             @else
                 <a class="btn btn-green ml-5 dropdown-toggle" style="border-radius: 30px;" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ auth()->user()->name }}</a>

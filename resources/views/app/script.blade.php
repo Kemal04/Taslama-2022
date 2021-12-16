@@ -4,4 +4,5 @@
 <script src="{{ asset('js/aos.js') }}"></script>
 <script src="{{ asset('js/splide.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/splide-slider.js') }}"></script>
 <script> AOS.init(); </script>

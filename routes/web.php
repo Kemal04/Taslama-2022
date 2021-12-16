@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ForeignController;
+use App\Http\Controllers\CityController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
@@ -31,7 +32,10 @@ Route::get('/tebigaty-gormak/{id}', [ThreemainController::class, 'show'])->name(
 
 Route::get('/biz-barada', [AboutController::class, 'index'])->name('about.index');
 Route::get('/biz-barada/statistika', [AboutController::class, 'statik'])->name('about.statik');
-Route::get('/biz-barada/yurdumyzdaky-maglumatlar', [AboutController::class, 'ourcountry'])->name('about.ourcountry');
 
 Route::get('/biz-barada/dasary-yurlardaky-maglumatlar', [ForeignController::class, 'index'])->name('foreign.index');
+Route::get('/biz-barada/dasary-yurlardaky-maglumatlar/{id}', [ForeignController::class, 'show'])->name('foreign.show');
+
+Route::get('/biz-barada/yurdumyzdaky-maglumatlar', [CityController::class, 'index'])->name('ourcountry.index');
+Route::get('/biz-barada/yurdumyzdaky-maglumatlar/{id}', [CityController::class, 'show'])->name('ourcountry.show');
 

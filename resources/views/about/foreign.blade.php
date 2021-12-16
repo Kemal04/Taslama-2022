@@ -239,19 +239,19 @@
                     <div class="tab-pane fade" id="a1" role="tabpanel" aria-labelledby="1">
                         @foreach($foreigns as $foreign)
                         @if ($foreign->country_id == 1)
-                        
+
                         <div class="row border-bottom mb-3 p-3">
                             <div class="col-lg-6">
-                                <div class="card">
+                                <a href="{{ route('foreign.show', $foreign->id) }}" class="card text-decoration-none">
                                     <img src="{{ asset($foreign->img) }}" class="img-fluid">
                                     <div class="card-body">
-                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $foreign->name }}</div>
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $foreign->name }}</div>
                                         <div>
-                                            <p class="text-secondary mt-3">{{ $foreign->title }}</p>
-                                            <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
+                                            <p class="text-secondary mt-3"><?php echo (substr($foreign ['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <div class="col-lg-6">
@@ -355,6 +355,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 border-left">
                 <div class="border-bottom pl-4 py-3">
                     <div class="h5">Header</div>
