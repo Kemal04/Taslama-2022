@@ -11,19 +11,20 @@
 
     @include ('app.navbar')
 
+    
     <section class="banner">
         <div class="container-fluid" style="width: 85%;">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-4 text-white">
                     <div data-aos="fade-left"><small style="letter-spacing: 2px; font-weight: 700;">Jadyly tebigata Hoşgeldiniz!!!</small></div>
                     <div class="my-4">
-                        <h1 data-aos="fade-left" class="font-weight-bold">Adam tebigatyň önümi. Tebigatyň per­zen­di!</h1>
+                        <h1 data-aos="fade-left" class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borçdyr</h1>
                     </div>
-                        <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Ýurdumyzyň künjeklerinde, aýratyn-da, gözel paýtagtymyzyň töweregindäki dag eteklerinde el bilen döredilen ýaýlalar gök öwüsýär. Häzirki döwürde baýyrlyklar pürli we saýaly agaçlary bilen gözüňi dokundyrýar. El bilen döredilen tokaýlyklar ösüp boý alýar, her ýyl geçirilýän köpçülikleýin çäreler netijesinde, olaryň tutýan meýdany giňelýär.</p>
-                        <p data-aos="fade-left" data-aos-delay="300" class=""><a href="#" class="btn btn-green">Köp maglumatlar</a></p>
+                    <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Ýurdumyzyň künjeklerinde, aýratyn-da, gözel paýtagtymyzyň töweregindäki dag eteklerinde el bilen döredilen ýaýlalar gök öwüsýär. Häzirki döwürde baýyrlyklar pürli we saýaly agaçlary bilen gözüňi dokundyrýar. El bilen döredilen tokaýlyklar ösüp boý alýar, her ýyl geçirilýän köpçülikleýin çäreler netijesinde, olaryň tutýan meýdany giňelýär.</p>
+                    <p data-aos="fade-left" data-aos-delay="300" class=""><a href="{{ route('ourcountry.index') }}" class="btn btn-green">Köp maglumatlar</a></p>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left">
-                    <img src="{{ asset('img/cards/banner-card.JPG') }}" class="img-fluid w-75">
+                    <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid w-75">
                 </div>
             </div>
         </div>
@@ -38,7 +39,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
                 <div class="card border-0 mr-4" style="background-color: transparent;">
-                    <img src="{{ asset('img/cards/statik.jpg') }}" class="img-fluid">
+                    <img src="{{ asset('img/about/statik.jpg') }}" class="img-fluid">
                     <div class="card-body p-0 my-3">
                         <span class="text-secondary mb-2 d-block">15 Jan 2020 <span class="mx-2">•</span> By Pastor Campbell </span>
                         <div class="my-3 h5">Statistika</div>
@@ -50,7 +51,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
                 <div class="card border-0 mr-4" style="background-color: transparent;">
-                    <img src="{{ asset('img/cards/world.jpg') }}" class="img-fluid">
+                    <img src="{{ asset('img/about/world.jpg') }}" class="img-fluid">
                     <div class="card-body p-0 my-3">
                         <span class="text-secondary mb-2 d-block">15 Jan 2020 <span class="mx-2">•</span> By Pastor Campbell </span>
                         <div class="my-3 h5">Daşary yurtlarda bolup geçýän tebigy täzelikler</div>
@@ -62,7 +63,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up">
                 <div class="card border-0 mr-4" style="background-color: transparent;">
-                    <img src="{{ asset('img/cards/TKM.png') }}" class="img-fluid">
+                    <img src="{{ asset('img/about/TKM.png') }}" class="img-fluid">
                     <div class="card-body p-0 my-3">
                         <span class="text-secondary mb-2 d-block">15 Jan 2020 <span class="mx-2">•</span> By Pastor Campbell </span>
                         <div class="my-3 h5">Ýurdumyzda bolup geçýän täzelikler</div>
@@ -91,36 +92,36 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-4">
-                    <a href="{{ asset('img/gallery/1.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/1.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/2.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/2.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/2.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/4.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/4.jpg') }}" class="img-fluid p-1">
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="{{ asset('img/gallery/5.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/5.jpg') }}" class="img-fluid p-1">
-                    </a>
-                    <a href="{{ asset('img/gallery/3.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/3.jpg') }}" class="img-fluid p-1">
-                    </a>
-                    <a href="{{ asset('img/gallery/1.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/1.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/4.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
                 <div class="col-lg-4">
-                    <a href="{{ asset('img/gallery/1.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/1.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/5.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/5.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/2.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/2.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/3.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/3.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/4.jpg') }}" data-fancybox="gallery">
-                        <img src="{{ asset('img/gallery/4.jpg') }}" class="img-fluid p-1">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
+                    </a>
+                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/2.jpeg') }}" class="img-fluid p-1">
+                    </a>
+                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery">
+                        <img src="{{ asset('img/gallery/4.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
             </div>

@@ -13,7 +13,6 @@
 })(jQuery);
 
 new Splide('#main-slider', {
-    type: 'loop',
     perPage: 3,
     perMove: 1,
     pagination: false,

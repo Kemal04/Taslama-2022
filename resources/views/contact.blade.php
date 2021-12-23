@@ -11,19 +11,20 @@
 
     @include ('app.navbar')
 
+    
     <section class="banner">
         <div class="container-fluid" style="width: 85%;">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-4 text-white">
                     <div data-aos="fade-left"><small style="letter-spacing: 2px; font-weight: 700;">Jadyly tebigata Hoşgeldiniz!!!</small></div>
                     <div class="my-4">
-                        <h1 data-aos="fade-left" class="font-weight-bold">Adam tebigatyň önümi. Tebigatyň per­zen­di!</h1>
+                        <h1 data-aos="fade-left" class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borçdyr</h1>
                     </div>
-                        <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Döwrebap seýilgähler ak mermerli Aşgabadyň bezegi bolmak bilen bir hatarda şäher ilatynyň arassa howada dynç almagy we bedenterbiýe bilen meşgullanmagy üçin zerur şertleri üpjün edýär. Paýtagtymyzyň döwrebap seýilgähleri diňe bir gözellik döredýän künjek bolman, eýsem açyk Asmanyň astynda çagalaryň şadyýan oýnamaklary we dynç günleri, şanly seneler mynasybetli aýdym-sazly çykyşlary guramak üçin amatly ýer bolup durýar. </p>
-                        <p data-aos="fade-left" data-aos-delay="300" class=""><a href="#" class="btn btn-green">Köp maglumatlar</a></p>
+                    <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Ýurdumyzyň künjeklerinde, aýratyn-da, gözel paýtagtymyzyň töweregindäki dag eteklerinde el bilen döredilen ýaýlalar gök öwüsýär. Häzirki döwürde baýyrlyklar pürli we saýaly agaçlary bilen gözüňi dokundyrýar. El bilen döredilen tokaýlyklar ösüp boý alýar, her ýyl geçirilýän köpçülikleýin çäreler netijesinde, olaryň tutýan meýdany giňelýär.</p>
+                    <p data-aos="fade-left" data-aos-delay="300" class=""><a href="{{ route('ourcountry.index') }}" class="btn btn-green">Köp maglumatlar</a></p>
                 </div>
                 <div class="col-lg-5" data-aos="fade-left">
-                    <img src="{{ asset('img/cards/banner-card.JPG') }}" class="img-fluid w-75">
+                    <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid w-75">
                 </div>
             </div>
         </div>

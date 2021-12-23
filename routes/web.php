@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AidmoneyController;
 use App\Http\Controllers\ForeignController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ThreemainController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 require __DIR__ . '/auth.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
@@ -39,3 +42,8 @@ Route::get('/biz-barada/dasary-yurlardaky-maglumatlar/{id}', [ForeignController:
 Route::get('/biz-barada/yurdumyzdaky-maglumatlar', [CityController::class, 'index'])->name('ourcountry.index');
 Route::get('/biz-barada/yurdumyzdaky-maglumatlar/{id}', [CityController::class, 'show'])->name('ourcountry.show');
 
+Route::get('/ulanyjy-profili', [ProfilController::class, 'index'])->name('profil.index');
+
+Route::namespace('index')->middleware(['auth'])->group(function () {
+    
+});

@@ -126,7 +126,7 @@
                         </div>
                         <div class="row border-bottom mb-3 p-3">
                             <div class="card border-0" style="background-color: transparent;">
-                                <img src="{{ asset('img/cards/world.jpg') }}" class="card-img">
+                                <img src="{{ asset('img/about/foreign/main/usa.jpg') }}" class="card-img">
                                 <div class="card-body px-0">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <div class="h3">Header</div>
