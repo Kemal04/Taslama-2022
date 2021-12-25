@@ -39,7 +39,7 @@
                 <p class="mt-5"><a href="{{ route('about.index') }}" class="btn btn-green">Köp maglumatlar</a></p>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('img/about/ourcountry/main-2.jpg') }}" alt="Image" class="img-fluid rounded">
+                <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" alt="Image" class="img-fluid rounded">
             </div>
         </div>
     </div>

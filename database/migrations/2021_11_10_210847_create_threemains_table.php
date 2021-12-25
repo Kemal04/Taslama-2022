@@ -16,7 +16,7 @@ class CreateThreemainsTable extends Migration
         Schema::create('threemains', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title');
+            $table->longText('title');
             $table->string('img');
         });
     }

@@ -21,26 +21,26 @@
                 <div class="col-lg-3 col-6">
                     <div class="rounded shadow d-block mb-3 position-relative bg-info text-white ">
                         <div class="inner p-2">
-                            <h3>150</h3>
-                            <p>New Orders</p>
+                            <h3>99931</h3>
+                            <p>Ekilen agaçlar</p>
                         </div>
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
                         </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-6">
                     <div class="rounded shadow d-block mb-3 position-relative bg-warning text-white ">
                         <div class="inner p-2">
-                            <h3>150</h3>
-                            <p>New Orders</p>
+                            <h3>342331</h3>
+                            <p>Indi ekilmeli</p>
                         </div>
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
                         </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
                         </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
                         </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
@@ -81,10 +81,9 @@
             </div>
             <div class="col-lg-6 text-center d-flex justify-content-end">
                 <div class="w-75">
-                    <div class="h1">Header</div>
+                    <div class="h3">Howanyň we agaçlaryň Statistikasy</div>
                     <p class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis esse deserunt tempore. Aperiam vitae voluptatum quas sit eligendi deleniti in enim minus suscipit, aliquam inventore error, hic, esse vero?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis esse deserunt tempore. Aperiam vitae voluptatum quas sit eligendi deleniti in enim minus suscipit, aliquam inventore error, hic, esse vero?
+                        Türkmenistanda adatdaky bolşy ýaly her ýylda nobatdaky agaç ekme dabarasy geçirilýär we ýurdumyzda agaçlaryň sany her ýyl köpelýär.
                     </p>
                 </div>
             </div>

@@ -20,7 +20,7 @@
                 <ul class="nav border-bottom" id="myTab" role="tablist">
                     <li class="h5 mr-5 text-green">Yurtlar</li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" id="tab1" data-toggle="tab" href="#world-tab-1" role="tab" aria-controls="world-tab-1" aria-selected="true">All</a>
+                        <a class="nav-link text-dark" id="tab1" data-toggle="tab" href="#world-tab-1" role="tab" aria-controls="world-tab-1" aria-selected="true">Hemmesi</a>
                     </li>
                     @foreach($countries as $country)
                     <li class="nav-item">
@@ -39,8 +39,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/small-img/4.jpg') }}" class="img-fluid">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;">Amerikanyň Peru şäherinde 7.5 bal derejede ýer titremesi boldy..</div>
+                                                        <p class="text-secondary mt-3 w-75">ABŞ Geologiýa Gözleg gullugy (USGS) 7.5 ball ululykda ýer titremesiniň merkeziniň kenarýaka Barranca şäherinden 42 km demirgazyk-günbatarda bolandygyny habar berdi. 112.5 kilometr çuňlukda hasaba alnan ýer titremesinden soň sunami barada duýduryş berilmedi. Ilkinji kesgitlemelere görä ýer titremesinde adam ýa-da emläk ýitgisi ýokdygy habar berildi. </p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -358,11 +358,11 @@
 
             <div class="col-lg-4 border-left">
                 <div class="border-bottom pl-4 py-3">
-                    <div class="h5">Header</div>
+                    <div class="h5">Bellik: </div>
                 </div>
                 <div class="border-bottom pl-4 py-3">
                     <p class="text-secondary">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolor tenetur perferendis modi dignissimos adipisci sunt nulla, enim eaque tempore consectetur? Voluptatibus saepe repellat nam, quidem dolorum tempora eveniet odit.
+                       Bu ýerde siz dünýä ýurtlaryndaky bolup geçýän ähli täzelikleri okap bilersiňiz we olara baha berip bilersiňiz!
                     </p>
                 </div>
                 <div class="border-bottom pl-4 py-3">
