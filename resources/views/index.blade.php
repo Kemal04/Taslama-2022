@@ -12,7 +12,7 @@
     @include ('app.navbar')
 
     <section class="banner">
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 85%;">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-4 text-white">
                     <div data-aos="fade-left"><small style="letter-spacing: 2px; font-weight: 700;">Jadyly tebigata Hoşgeldiniz!!!</small></div>
