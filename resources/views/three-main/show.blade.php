@@ -18,7 +18,7 @@
             <div class="col-lg-8">
                 <div class="h2 mb-3">{{ $main->name }}</div>
                 <p style="line-height: 30px; font-size: 20px;">
-                    {{ $main->title }}
+                    {!! $main->title !!}
                 </p>
             </div>
             <div class="col-lg-4">
