@@ -21,8 +21,8 @@
                 <div class="col-lg-3 col-6">
                     <div class="rounded shadow d-block mb-3 position-relative bg-info text-white ">
                         <div class="inner p-2">
-                            <h3>99931</h3>
-                            <p>Ekilen agaçlar</p>
+                            <h3>1 mln</h3>
+                            <p>1 ýylda ekilmeli agaçlar</p>
                         </div>
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
@@ -34,8 +34,8 @@
                 <div class="col-lg-3 col-6">
                     <div class="rounded shadow d-block mb-3 position-relative bg-warning text-white ">
                         <div class="inner p-2">
-                            <h3>342331</h3>
-                            <p>Indi ekilmeli</p>
+                            <h3>1 mln</h3>
+                            <p>1 ýylda ekilen agaçlar</p>
                         </div>
                         <div style="color: rgba(0,0,0,.15); z-index: 0;">
                             <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
