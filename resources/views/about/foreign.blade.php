@@ -40,7 +40,7 @@
                                                     <img src="{{ asset('img/small-img/4.jpg') }}" class="img-fluid">
                                                     <div class="card-body">
                                                         <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;">Amerikanyň Peru şäherinde 7.5 bal derejede ýer titremesi boldy..</div>
-                                                        <p class="text-secondary mt-3 w-75">ABŞ Geologiýa Gözleg gullugy (USGS) 7.5 ball ululykda ýer titremesiniň merkeziniň kenarýaka Barranca şäherinden 42 km demirgazyk-günbatarda bolandygyny habar berdi. 112.5 kilometr çuňlukda hasaba alnan ýer titremesinden soň sunami barada duýduryş berilmedi. Ilkinji kesgitlemelere görä ýer titremesinde adam ýa-da emläk ýitgisi ýokdygy habar berildi. </p>
+                                                        <p class="text-secondary mt-3 w-75">ABŞ Geologiýa Gözleg gullugy (USGS) 7.5 ball ululykda ýer titremesiniň merkeziniň kenarýaka...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -49,8 +49,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/small-img/2.jpg') }}" class="img-fluid">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Amerikanyň Peru şäherinde 7.5 bal derejede ýer titremesi boldy..</div>
+                                                        <p class="text-secondary mt-3 w-75">ABŞ Geologiýa Gözleg gullugy (USGS) 7.5 ball ululykda ýer titremesiniň merkeziniň kenarýaka...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -59,8 +59,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/small-img/3.jpg') }}" class="img-fluid">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Amerikanyň Peru şäherinde 7.5 bal derejede ýer titremesi boldy..</div>
+                                                        <p class="text-secondary mt-3 w-75">ABŞ Geologiýa Gözleg gullugy (USGS) 7.5 ball ululykda ýer titremesiniň merkeziniň kenarýaka...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -318,7 +318,76 @@
                         @foreach($foreigns as $foreign)
                         @if ($foreign->country_id == 2)
 
-                        {{ $foreign->country_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('foreign.show', $foreign->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($foreign->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $foreign->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($foreign ['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/small-img/5.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach

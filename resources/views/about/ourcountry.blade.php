@@ -40,7 +40,7 @@
                                                     <img src="{{ asset('img/about/ourcountry/main.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
                                                         <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Tebigaty goramak umumy wezipämizdir</div>
-                                                        <p class="text-secondary mt-3 w-75">–Türkmenistan 1996-njy ýylda ilkinjileriň biri bolup BMG-niň çölleşmä garşy göreş boýunça Konwensiýasyny tassyklady. Edil bir ýyldan soň ýurdumyzda amala aşyrylmaly işleriň Milli maksatnamasy kabul edildi. Ol öri meýdanlarynyň oýlanyşykly ulanylmagynyň esasy jähetlerini, tokaý hojalygyny ösdürmegi, ürgün çägäni berkitmegi we tokaýlaşdyrmany, suwarymly ýerleriň ýagdaýyny gowulaşdyrmagy, amaly ekologik derňewleri geçirmegi göz öňünde tutýardy. </p>
+                                                        <p class="text-secondary mt-3 w-75">–Türkmenistan 1996-njy ýylda ilkinjileriň biri bolup BMG-niň çölleşmä garşy göreş boýunça Konwensiýasyny tassyklady. Edil bir ýyldan soň ýurdumyzda amala aşyrylmaly işleriň </p>
                                                         <a href="#" class="text-decoration-none text-secondary">29.09.2017, 9:48</a>
                                                     </div>
                                                 </div>
@@ -49,8 +49,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/about/ourcountry/main-2.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> </div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                        <p class="text-secondary mt-3 w-75">Eziz Watanymyzyň tebigy baýlygyny we gözelligini aýawly saklamak, ony geljek nesillerimize ýetirmek – hormatly Prezidentimiz Gurbanguly Berdimuhamedowyň alyp </p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -60,7 +60,7 @@
                                                     <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
                                                         <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Tebigaty aýawly saklamak – mukaddes borç</div>
-                                                        <p class="text-secondary mt-3 w-75">Eziz Watanymyzyň tebigy baýlygyny we gözelligini aýawly saklamak, ony geljek nesillerimize ýetirmek – hormatly Prezidentimiz Gurbanguly Berdimuhamedowyň alyp barýan döwlet syýasatynyň esasy ugurlarynyň biridir. Tebigaty goramagyň milli maksatnamasy ykdysady, durmuş we ekologiýa ulgamlarynda goýlan wezipeleriň toplumlaýyn çözülmegine esaslanýar, bu bolsa adamlaryň abadan durmuşynyň möhüm şerti bolup durýar.   </p>
+                                                        <p class="text-secondary mt-3 w-75">Eziz Watanymyzyň tebigy baýlygyny we gözelligini aýawly saklamak, ony geljek nesillerimize ýetirmek – hormatly Prezidentimiz Gurbanguly Berdimuhamedowyň alyp </p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -73,7 +73,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -86,7 +86,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -99,7 +99,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/3.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -112,7 +112,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/5.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -130,7 +130,6 @@
                                 <div class="card-body px-0">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <div class="h3">Awaza milli syýahatçylyk zolagynda nobatdaky Forum</div>
-                                        <span class="text-small text-muted">29.09.2017, 7:54</span>
                                     </div>
                                     <p class="text-dark">
                                         Türkmenistanyň Prezidenti Gurbanguly Berdimuhamedowyň başlangyjy boýunça 2018-nji ýylda Türkmenbaşy şäheriniň Awaza dynç alyş zolagynda Araly halas ediş Halkara gaznasyny döreden ýurtlaryň Sammitiniň bolup geçendigini alymyň sözlerine goşmak gerek. Şonda Sammitiň esasy resminamalarynyň biri hökmünde Merkezi Aziýa sebitinde Durnukly ösüş üçin daşky gurşawy goramak boýunça Sebit maksatnamasy işlenip düzüldi. Bellenen maksatnamany durmuşa geçirmek üçin, ýörite iş topary döredildi. Soňky döwürde Türkmenistanda çölleşmä garşy göreş we tokaý Maksatnamasynyň çäklerinde 100 müň gektardan gowrak ýere bag ekildi. Balygyň 20-den gowrak dürli görnüşi bellige alnan “Altyn asyr “ Türkmen kölüniň gurluşygy-da tebigaty goramak maksatlaryna ýardam edýär. Kölüň daşyny dürli ösümlikler gurşap alýar. Bu bolsa öz gezeginde haýwanlaryň we guşlaryň dürli görnüşleriniň amatly şertlerde köpelmegine ýardam edýär. Alymlaryň çöldäki öri ýerleriniň suw üpjünçiligini dikeltmek, gowulaşdyrmak, şeýle hem ýabany haýwanlary köpeltmek üçin amatly şertleri döretmek ugrundaky tagallalary-da çölleşmä garşy alnyp barylýan işleriň bir bölegidir.
@@ -148,7 +147,7 @@
                                                     <img src="{{ asset('img/about/ourcountry/main.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
                                                         <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Suw, ýer we biologik serişdelerini netijeli peýdalanmak</div>
-                                                        <p class="text-secondary mt-3 w-75">biologik köpdürliligi we tebigy landşaftlary goramak, çölleşmä we tokaýlaryň ýitmegine garşy göreşmek babatda uly işler geçirilýär. Türkmenistanda eýeçiliginiň görnüşine garamazdan, işiň ekologik taýdan howply görnüşlerini amala aşyrýan edaralar, kärhanalar, guramalar, şol sanda daşary ýurt edara görnüşli taraplar, olaryň şahamçalary, wekilhanalary, şeýle hem edara görnüşli tarapy döretmezden telekeçilik işi bilen meşgullanýan şahsy taraplar üçin hökmany ekologik ätiýaçlandyrmasy girizildi.  </p>
+                                                        <p class="text-secondary mt-3 w-75">Biologik köpdürliligi we tebigy landşaftlary goramak, çölleşmä we tokaýlaryň ýitmegine garşy göreşmek babatda uly işler geçirilýär. Türkmenistanda eýeçiliginiň görnüşine garamazdan...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -157,8 +156,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/about/ourcountry/main-2.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Suw, ýer we biologik serişdelerini netijeli peýdalanmak</div>
+                                                        <p class="text-secondary mt-3 w-75">Biologik köpdürliligi we tebigy landşaftlary goramak, çölleşmä we tokaýlaryň ýitmegine garşy göreşmek babatda uly işler geçirilýär. Türkmenistanda eýeçiliginiň görnüşine garamazdan...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -167,8 +166,8 @@
                                                 <div class="card">
                                                     <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="img-fluid" style="max-height: 200px!important;">
                                                     <div class="card-body">
-                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-                                                        <p class="text-secondary mt-3 w-75">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in... </p>
+                                                        <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Suw, ýer we biologik serişdelerini netijeli peýdalanmak</div>
+                                                        <p class="text-secondary mt-3 w-75">Biologik köpdürliligi we tebigy landşaftlary goramak, çölleşmä we tokaýlaryň ýitmegine garşy göreşmek babatda uly işler geçirilýär. Türkmenistanda eýeçiliginiň görnüşine garamazdan...</p>
                                                         <a href="#" class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</a>
                                                     </div>
                                                 </div>
@@ -181,7 +180,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -194,7 +193,7 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
@@ -255,12 +254,12 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
-                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
-                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -268,12 +267,12 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/2.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
-                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
-                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -281,12 +280,12 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/3.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
-                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
-                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -294,12 +293,12 @@
                                 <div class="card mb-3 shadow-sm">
                                     <div class="row no-gutters">
                                         <div class="col-md-3 d-flex justify-content-center">
-                                            <img src="{{ asset('img/small-img/5.jpg') }}" class="card-img">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                                         </div>
                                         <div class="col-md-9">
                                             <div class="card-body p-0 px-2 py-1">
-                                                <div class="font-weight-bold">How Did van Gogh’s Turbulent Mind Depict One of the Most</div>
-                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">Katy Lin on Sep 29, 2017 at 9:48 am</a></p>
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -379,7 +378,7 @@
                     <div class="card mb-2 shadow-sm">
                         <div class="row no-gutters ">
                             <div class="col-md-3 d-flex justify-content-center">
-                                <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body p-0 px-2 py-1">
@@ -391,7 +390,7 @@
                     <div class="card mb-2 shadow-sm">
                         <div class="row no-gutters ">
                             <div class="col-md-3 d-flex justify-content-center">
-                                <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body p-0 px-2 py-1">
@@ -403,11 +402,11 @@
                     <div class="card mb-2 shadow-sm">
                         <div class="row no-gutters ">
                             <div class="col-md-3 d-flex justify-content-center">
-                                <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body p-0 px-2 py-1">
-                                    <div class="font-weight-bold">Tebigaty goraýan jemgyýet ýangyç-energetika toplumynyň kärhanalary bilen nähili özara hereket edýär?</div>
+                                    <div class="font-weight-bold">Tebigaty goraýan jemgyýet ýangyç-energetika toplumynyň kärhanalary...</div>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +414,7 @@
                     <div class="card mb-2 shadow-sm">
                         <div class="row no-gutters ">
                             <div class="col-md-3 d-flex justify-content-center">
-                                <img src="{{ asset('img/small-img/1.webp') }}" class="card-img">
+                                <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body p-0 px-2 py-1">
@@ -441,7 +440,7 @@
                 </div>
                 <div class="pl-4 py-3">
                     <div class="card border-0" style="background-color: transparent;">
-                        <img src="{{ asset('img/small-img/4.jpg') }}" class="img-fluid rounded">
+                        <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="img-fluid rounded">
                         <div class="card-body">
                             <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;"> Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
                         </div>
