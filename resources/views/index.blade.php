@@ -170,7 +170,9 @@
                     <div class="col-lg-12 my-4">
                         ya-da
                     </div>
-                    
+                    <div class="col-lg-3 mb-4">
+                        <input type="number" min="10" class="form-control px-5" placeholder="Bahasyny girizinin" style="border-radius: 25px;">
+                    </div>
                     <div class="col-lg-12 d-flex justify-content-center">
                         <div class="w-50">
                             <button type="submit" class="btn btn-lg btn-block bg-green text-white font-weight-bolder">Kömek ber</button>
