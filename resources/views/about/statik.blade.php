@@ -14,110 +14,55 @@
 
     <section class="about-banner"></section>
 
-    <div class="container-fluid my-5 py-5 d-flex justify-content-center">
-        <div class="w-75">
-            <div class="row">
-
-                <div class="col-lg-3 col-6">
-                    <div class="rounded shadow d-block mb-3 position-relative bg-info text-white ">
-                        <div class="inner p-2">
-                            <h3>1 mln</h3>
-                            <p>1 ýylda ekilmeli agaçlar</p>
-                        </div>
-                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
-                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
-                        </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <div class="rounded shadow d-block mb-3 position-relative bg-warning text-white ">
-                        <div class="inner p-2">
-                            <h3>1 mln</h3>
-                            <p>1 ýylda ekilen agaçlar</p>
-                        </div>
-                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
-                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
-                        </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <div class="rounded shadow d-block mb-3 position-relative bg-success text-white ">
-                        <div class="inner p-2">
-                            <h3>150</h3>
-                            <p>New Orders</p>
-                        </div>
-                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
-                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
-                        </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-6">
-                    <div class="rounded shadow d-block mb-3 position-relative bg-danger text-white ">
-                        <div class="inner p-2">
-                            <h3>150</h3>
-                            <p>New Orders</p>
-                        </div>
-                        <div style="color: rgba(0,0,0,.15); z-index: 0;">
-                            <i class="fas fa-shopping-bag display-3 position-absolute" style="top: 20px; right: 15px;"></i>
-                        </div>
-                        <a href="#" class="d-block py-1 position-relative text-center text-decoration-none text-white" style="background: rgba(0,0,0,.1); z-index: 10;">Doly oka <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-
+    <div class="container my-5 py-5">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <img src="{{ asset('img/about/statik-2010.png') }}" class="img-fluid">
+            </div>
+            <div class="col-lg-5 text-center">
+                <div class="h4">Türkmenistanda ýylda ekilýän agaçlar</div>
+                <p>Ýurdumyzda agaçlara degişli köpdürli çäreler alnyp barylýar. Hormatly Prezidentimiziň saýasynda hem her ýylda ekilmeli agaçlar gün-günden köpelýär. Hormatly Arkadagymyzyň şeýle çäreleri alyp barmagy netijesinde Türkmenistan watanymyz gül gülistanlyk bolýar.
+                    <br>
+                    Suratda görnüşi ýaly hem 2001-2010-njy ýyllar aralygynda agaç nahyllarynyň ýyl-ýyldan köpelýändigine gözegçilik edip bolar
+                </p>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid p-0 m-0 my-5 py-5">
+        <img src="{{ asset('img/about/statik-bg.jpeg') }}" class="img-fluid w-100">
     </div>
 
     <div class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div id="columnchart_material" class="" style="width: 100%; height: 300px;"></div>
-            </div>
-            <div class="col-lg-6 text-center d-flex justify-content-end">
-                <div class="w-75">
-                    <div class="h3">Howanyň we agaçlaryň Statistikasy</div>
-                    <p class="text-secondary">
-                        Türkmenistanda adatdaky bolşy ýaly her ýylda nobatdaky agaç ekme dabarasy geçirilýär we ýurdumyzda agaçlaryň sany her ýyl köpelýär.
-                    </p>
-                </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="h3 text-center">Ýaşyl ýaşaýşyň ýalkawy</div>
+                <p>
+                    Türkmenistanyň 2021 — 2025-nji ýyllar üçin Milli tokaý maksatnamasy we ony amala aşyrmak boýunça ýerine ýetirilmeli çäreleriň meýilnamasy hakynda söhbet
+                    Tebigat — ýaşaýşyň çeşmesi. Onuň bilen parahatçylykda ýaşamak abadançylygyň hem-de saglygyň şertidir. Bu babatda ekologiýa medeniýeti, ekologiýa taýdan arassa ýaşaýyş üstünligiň açary hasaplanýar. Howanyň ählumumy maýlamagy, çölleşmek ýaly tebigy hadysalaryň öňüni almak üçin dünýädäki her bir adamyň ekologiýa jogapkärçiligini duýup ýaşamagy zerurdyr. Onuň bilen sazlaşykly ýaşaýyş ählumumy abadançylygyň gözbaşydyr.
+                    Golaýda, ýagny 25-nji iýunda hormatly Prezidentimiziň Ministrler Kabinetiniň sanly ulgam arkaly geçirilen nobatdaky mejlisinde gol çeken Kararyna laýyklykda, Türkmenistanyň 2021 — 2025-nji ýyllar üçin Milli tokaý maksatnamasynyň we ony amala aşyrmak boýunça ýerine ýetirilmeli çäreleriň meýilnamasynyň tassyklanmagy «Tebigat bilen parahatçylyk» ýörelgesini dabaralandyrýar. Häzirki döwürde dünýäde ekologiýa, durmuş we ykdysady meseleleriň biri-biri bilen baglanyşyklydygyndan ugur alnyp, olary bitewülikde çözmek başlangyjy öňe sürülýär. Arassa tehnologiýalary ösdürmek bilen birlikde, Ýeriň ýaşyl ýaşaýşynyň aladasy edilýär.
+                    Howanyň üýtgemegine garşy göreşiň iň ygtybarly usuly tokaýlary goramak hem-de köpeltmekdir. Sebäbi tokaýlyklar ýylda uglerodyň dioksidiniň 2 milliard tonnasyny sorup alýar, ýagny bir agaç bir ýylda ortaça 150 kilogram kömürturşy gazyny ýuwudýar. Ýeriň öýkeni hasaplanýan tokaýlar howany kislorod bilen baýlaşdyrmaga, tebigatda suw balansyny saklamaga ýardam edýär, çägäni berkitmekde, topragyň eroziýasynyň, ýuwulmagynyň öňüni almakda, ony baýlaşdyrmakda, ýeliň güýjüni peseltmekde, gurakçylyga garşy göreşmekde aýratyn orun eýeleýär. Bir gektar meýdandaky tokaý ýylda 50 — 70 tonna tozany sorýar. Şeýle mysallardan görnüşi ýaly, tokaý — özboluşly ekologik ulgam, biogeosenoz.
+                    Planetamyzyň gury ýer böleginiň 30 göterimini, ýagny 4 milliard gektardan gowrak meýdanyny tokaýlar tutýar. XXI asyryň başyna çenli adamzat Ýer ýüzünde bar bolan tokaýlaryň, takmynan, 50 göterimini ýok etdi. Dürli sebäplere görä, her ýylda millionlarça gektar tokaý ýitirilýär. Ýöne soňky 25 ýylda olaryň ýok edilmeginiň depginini 50 göterim peseltmek başartdy.
+                    Garaşsyzlyk ýyllarynda ýurdumyzyň ilatly ýerleriniň doly gazlaşdyrylmagy biologik dürlüligiň goralyp saklanmagyna, dikeldilmegine we baýlaşdyrylmagyna hem-de tokaý zolaklarynyň giňeldilmegine uly ýardam etdi. Şeýlelikde, daşky gurşawa antropogen täsirler has peselip, gymmatly arça we sazak tokaýlarynyň çapylmagy azaldy.
+                    <br>
+                    Hanlar hany Abdyrahym hanyň «Derýalar öz suwuny özi içmeýär, miweli agaçlar hem miwesini özi iýmeýär» diýen paýhasynda beýan edilişi ýaly, tebigatda ähli zat biri-biri bilen berk baglanyşykly. Tebigatyň bitewi hem baky aýlawynda her bir ýaprajygyň, gülüň, agajyň öz orny bar. Aň-paýhasly adam bu aýlawyň altyn halkasydyr. Dünýäniň abatlygy, adamzadyň bagtyýarlygy ynsanlaryň öz elinde.
+                    Şu ýylyň nyşanynda derek agajynyň bolmagy ýöne ýerden däl. Hormatly Prezidentimiziň «Türkmenistan — Bitaraplygyň mekany» atly kitabyndaky: «Müň ýyllyk çynarlar hiç garraman, görnükli hem kuwwatly sütünleri bilen bakylyk nyşany ýaly bolup, sarsman, saýa salyp otyrlar. Ýa-da baky Bitarap Watanymyzyň ösüşlerini alamatlandyryp, dik ýokary ösýän derek agaçlaryny göz öňüne getiriň! Olaryň şahalary asmana ümzük atýar, güýçli kökleri bolsa, daşyndan seretseň, zeminiň çuňluklarynda görünmän galýar. Eýsem-de bolsa, daragty ýaşadýan şol kökler, keramatly kökler ahyryn!» diýen sözlerini okap, onuň manysyna düşünýärsiň. Derek agajy mukaddes Garaşsyzlygymyzyň miweleri bolan ösüş-özgertmeler bilen birlikde, ýurdumyzy bagy-bossanlyga öwürmek syýasatynyň hem nyşanydyr. Tokaý maksatnamasynyň kabul edilmeginde aýratyn many-mazmun, sazlaşyk bar.
+                    Hormatly Prezidentimiz 2020-nji ýylyň 5-nji martynda Köpetdagyň eteginde köpçülikleýin bag ekmek dabarasyna taýýarlyk görlüşi bilen tanyşlygyň barşynda bag nahallarynyň aýratynlyklary barada aýdyp, beýleki agaçlar bilen bir hatarda, derek agajyna aýratyn gadyr goýulýandygyny, il içinde onuň baldaklarynyň berkemeginiň maşgala abadançylygy, agzybirligi hökmünde kabul edilýändigini belledi. Şonda hormatly Prezidentimiz derek agajy barada rowaýatyň bardygyny aýtdy. Gadymy döwürlerde iki ýaş juwan durmuş toýuny tutanda, maşgala abadançylygyny, agzybirligi alamatlandyrýan derek agajyny ekipdir. Rowaýatda aýdylyşy ýaly, juwanlaryň eken deregi ösüp-örňäp, beýik bag bolupdyr. Ol uly iliň guwanjyna öwrülipdir.
+                    Mälim bolşy ýaly, «Türkmenistan — Bitaraplygyň mekany» şygary astynda geçen ýylda Milli tokaý maksatnamasynda göz öňünde tutulan wezipeler üstünlikli jemlendi. Onuň çäklerinde, ýagny 2013 — 2020-nji ýyllarda ýurdumyzyň dürli künjekleriniň toprak, howa şertleriniň aýratynlyklaryna esaslanýan tokaýlary dikeltmek, döretmek boýunça tokaýçylyk taslamalary durmuşa geçirildi. Maksatnamada göz öňünde tutulan sekiz ýylda ýurdumyzy bagy-bossanlyga öwürmek işlerini giň gerimde alyp barmak üçin täze innowasion tehnologiýalary önümçilige ornaşdyrmak, Türkmenistanyň Aralýaka sebitinde tokaýlaşdyrmak işlerini geçirmek, «Awaza» milli syýahatçylyk zolagyny bagy-bossanlyga öwürmek işlerini dowam etmek, Awaza derýasynyň kenarlaryny tokaýlaşdyrmak, Garagumuň ösümlik dünýäsini baýlaşdyrmak boýunça uly işler durmuşa geçirildi. Bulardan başga-da, çölleşme hadysasynyň öňüni almak maksady bilen, süýşýän çägeleri berkitmek we çöl ýerleri tokaýlaşdyrmak, ekerançylyk meýdanlarynda gorag tokaý zolaklaryny döretmek, gül hem-de bezeg agaçlaryny ýeterlik mukdarda ösdürip ýetişdirmek, tokaýlaryň tükellemesini hem-de hasabyny alyp barmak, olaryň goragyny we gözegçiligini kämilleşdirmek ýaly wezipeler üstünlikli ýerine ýetirildi.
+                    Döwlet Baştutanymyzyň «Türkmenistanyň 2021 — 2025-nji ýyllar üçin Milli tokaý maksatnamasyny tassyklamak hakynda» Karara gol çekmegi bilen, şeýle asylly işleriň nobatdaky tapgyryna badalga berildi. Bu maksatnama daşky gurşawy goramak boýunça döwlet syýasatynyň hukuk esaslaryny pugtalandyrmak, howanyň üýtgemeginiň öňüni almak we onuň täsirini azaltmak boýunça işleriň esasy ugurlaryny kesgitlemek, ekoulgamlaryň we tokaý hojalygynyň howanyň üýtgemegine durnuklylygyny ýokarlandyrmak, şeýle hem rejelenen görnüşdäki Howanyň üýtgemegi barada Türkmenistanyň Milli strategiýasyny üstünlikli durmuşa geçirmek maksady bilen işlenip düzüldi.
+                    Geçen ýylda hemişelik Bitaraplygymyzyň şanly 25 ýyllygy mynasybetli jemi 25 million düýp agaç nahalynyň oturdylmagy sogap işleriň seresidir. Mukaddes Garaşsyzlygymyzyň şanly 30 ýyllygy mynasybetli ekilýän bag nahallarynyň möçberini artdyrmak maksady bilen, bu ýerde saýaly, pürli, miweli baglaryň we üzümiň 30 million düýp nahalyny ekmek bellenildi.
+                    <br>
+                    Milli Liderimiz BMG-niň kabul eden 2030-njy ýyla çenli Gün tertibiniň wajyp ugry, adamlaryň abadan durmuşynyň möhüm şertleriniň biri hökmünde Türkmenistanda ekologiýa meselesine aýratyn üns berilýändigini nygtaýar. BMG-niň 2030-njy ýyla çenli Durnukly ösüş maksatlarynyň hatarynda gury ýeriň ekologik ulgamyny goramak we dikeltmek, tokaýlary rejeli peýdalanmak, çölleşmä garşy göreşmek, ýerleriň degradasiýasyny bes etmek we yzyna öwürmek hem-de biologik köpdürlüligiň ýitmegini bes etmek (15-nji maksat) bilen bagly wezipeler kesgitlenendir.
+                    Hormatly Prezidentimiziň belleýşi ýaly, ata-babalarymyz kündükden el-ýüzüni ýuwanda, ondan akýan suwuň hem bagyň düýbüne ýygnanmagyny adat edinipdir. Şeýdibem, gumdaky suwsuz oýlarda bag gögertmegiň usulyny tapypdyr. Garaz, ýeke damja suw bisarpa ulanylmandyr. Daşky gurşawyň goragy hakyndaky alada milli ahlak-terbiýe mekdebine berk ornapdyr. Halk pähiminde «Öl agajy döwmegin, degmedige degmegin» diýilýär. Şeýle paýhas mekdebi häzirki zaman ekologiýa ylmyny baýlaşdyrýan egsilmez çeşmedir. Türkmenistanyň 2021 — 2025-nji ýyllar üçin Milli tokaý maksatnamasynyň esasy maksatlarydyr wezipeleri hem şolardan ugur alýar.
+                    Tokaý zolaklarynyň meýdanyny giňeltmek, tokaýlary dikeltmek, olary gorap saklamak we durnukly dolandyrmak, biologik dürlüligi gorap saklamak we baýlaşdyrmak, ýurdumyzda ekologiýa taýdan amatly şertleri döretmek, tokaýçylygy ösdürmek we bu ugur boýunça ylmy-barlag işlerini alyp barmak, halkara hyzmatdaşlygy ösdürmek pudagyň kanunçylyk binýadyny kämilleşdirmek maksatnamanyň esasy maksatlarydyr. Esasy wezipeleriň hatarynda tokaýlary goramak, dikeltmek, üznüksiz köpeltmek, tokaý serişdelerinden rejeli peýdalanmak we tokaý hojalygyny dolandyrmagyň döwrebap usullaryny önümçilige ornaşdyrmak, tokaý gaznasyny döwlet tarapyndan hasaba almak, tükellemek we gözegçilik (monitoring) işlerini geçirmek, toprak-howa şertlerine laýyklykda tokaýlaşdyrmak işlerini geçirmäge gönükdirilen maliýe-ykdysady we guramaçylyk-tehniki çäreleri geçirmek, ykdysady taýdan höweslendirmegi, maliýe serişdelerini çekmegi kämilleşdirmek arkaly döwlet tokaý goragyny güýçlendirmek, tokaýçylygy ösdürmegiň hukuk binýadyny kämilleşdirmek ýaly işler göz öňünde tutulýar. Şeýle-de, resminamada ýangyn howpsuzlygyny amala aşyrýan ygtyýarly döwlet edarasy bilen bilelikde tokaýlary ýangyndan goramagy üpjün etmek, olary zyýan beriji mör-möjeklerden we kesellerden goramak boýunça çäreleri yzygiderli geçirmek, tokaý hojalygy babatda halkara hyzmatdaşlygy ösdürmek we bu ugurda öňdebaryjy tejribeleri önümçilige ornaşdyrmak, ýurdumyzyň ykdysadyýetiniň durnukly ösmegine, esasan hem, oba hojalyk önümçiligine howanyň üýtgemeginiň zyýanly täsirini peseltmek, şeýle hem ekinleriň hasyllylygyny ýokarlandyrmak üçin ekerançylyk meýdanlarynda gorag tokaý zolaklarynyň ulgamyny döretmegi dowam etdirmek, şäherleri we obalary abadanlaşdyrmak üçin bagy-bossanlyga öwürmek işlerini geçirmek ýaly wezipeler kesgitlenipdir. Maksatnama laýyklykda, Aral deňziniň suwy çekilip, guran ýerlerinde emele gelýän duzly tozanyň ýetirýän zyýanly täsirini peseltmek üçin, şeýle-de «Altyn asyr» Türkmen kölüniň, onuň akabalarynyň töwereginde tokaýlaşdyrmak işlerini alyp barmak, Garagum sährasynda gurulýan desgalaryň töwereginde, öri meýdanlarda çölleşme hadysasynyň öňüni almak maksady bilen, sazak we beýleki çöl ösümliklerini ekmek arkaly tokaýlaşdyrmak işlerini dowam etmek göz öňünde tutulýar.
+                    Tokaý zolaklarynda ekilýän pürli we saýaly agaçlar bilen bir hatarda, miweli baglaryň, üzümiň, hoz-miweli görnüşleriniň ekilýän meýdanlary giňeldiler. Ýörite taýýarlanan taslamalar boýunça daglarda arça, pisse, badam, kerkaw, çöllerde sazak, gandym, çerkez, derýalaryň ýakasynda we kölleriň kenarynda toraňňy, söwüt, igde tokaýlaryny döretmek we olaryň meýdanyny giňeltmek işleri alnyp barlar. Üstümizdäki ýylda 30 million düýp, 2022 — 2025-nji ýyllarda her ýyl 3 million düýp agaç nahaly oturdylar. Türkmenistanyň döwlet tebigy goraghanalarynda 2021 — 2025-nji ýyllarda sazak, sözen, igde, arnap (unabi), pisse, grek hozy, türkmen arçasy, zerewşan arçasy, badam, zeýtun, dagdan, kerkaw, arguwan agaçlarynyň on müňlerçe nahallary ýetişdiriler.
+                    Diýarymyzyň «Çeti süýräp, künji ekibermeli» diýilýän ýerleri kesewiňi dürtseň gögerdýän bolsa-da, häzirki zaman tokaý hojalygyny ýöretmek üçin her bir işe ylmy esasda çemeleşmek zerur. Şonuň üçin täze maksatnamanyň III babynda tokaýçylygy ösdürmegiň ylmy esaslary kesgitlenýär. Bu ugurda amala aşyrylmaly ylmy-barlag işleriň hatarynda Türkmenistanda tokaýçylygy ösdürmegiň taryhy we bar bolan gojaman agaçlar barada kitapça, ýurdumyzyň toprak-howa şertlerinde durnukly ösmäge ukyply agaçlaryň we agaçjymak ösümlikleriň görnüşlerini ýetişdirmek boýunça gollanma taýýarlamak, tokaý zolaklarynyň ekologiýa täsirini, «Altyn asyr» Türkmen kölüniň we onuň akabalarynyň ugrunda biologik dürlüligi öwrenmek, şeýle-de ykdysady taýdan höweslendirmegi, maliýe serişdelerini çekmegi kämilleşdirmek arkaly döwlet tokaý goragyny güýçlendirmek göz öňünde tutulýar.
+                    Türkmenistanyň ösümlik dünýäsi 7000-den gowrak görnüşden ybarat bolup, olaryň 3200 töweregi ýokary derejeli we 4000-e golaýy pes derejeli (şol sanda kömelekler) ösümliklere degişlidir. Dag sebitleriniň ösümlik örtügi görnüş düzümi boýunça has baýdyr. Olaryň köp görnüşi dürli derejede goralmaga degişli bolup, türkmen arçasy, hoz, dagdan, armyt, tokaý almasy, badam we pisse aýratyn möhüm ähmiýete eýedir. Bu ulgamlarda seýrek duş gelýän we ýitmek howpy astynda duran ösümlikleriň köp sanly görnüşi toplanandyr.
+                </p>
             </div>
         </div>
     </div>
 
-
-
-    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {
-            'packages': ['bar']
-        });
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Year', 'Agac sanlary', 'howanyn hapalygy', 'arassa howwa'],
-                ['2019', 1000, 400, 200],
-                ['2020', 1200, 300, 400],
-                ['2021', 1500, 200, 600],
-                ['2022', 2000, 200, 800]
-            ]);
-
-            var options = {
-                chart: {},
-                backgroundColor: '#f6f2ef'
-            };
-
-            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-            chart.draw(data, google.charts.Bar.convertOptions(options));
-        }
-    </script>
     @include('app.footer')
     @include('app.script')
 </body>

@@ -45,5 +45,6 @@ Route::get('/biz-barada/yurdumyzdaky-maglumatlar/{id}', [CityController::class, 
 Route::get('/ulanyjy-profili', [ProfilController::class, 'index'])->name('profil.index');
 
 Route::namespace('index')->middleware(['auth'])->group(function () {
-    
+    Route::get('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'edit'])->name('main.edit');
+    Route::post('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'update'])->name('main.update');
 });

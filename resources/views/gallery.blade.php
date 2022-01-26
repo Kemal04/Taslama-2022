@@ -23,7 +23,7 @@
                     <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Ýurdumyzyň künjeklerinde, aýratyn-da, gözel paýtagtymyzyň töweregindäki dag eteklerinde el bilen döredilen ýaýlalar gök öwüsýär. Häzirki döwürde baýyrlyklar pürli we saýaly agaçlary bilen gözüňi dokundyrýar. El bilen döredilen tokaýlyklar ösüp boý alýar, her ýyl geçirilýän köpçülikleýin çäreler netijesinde, olaryň tutýan meýdany giňelýär.</p>
                     <p data-aos="fade-left" data-aos-delay="300" class=""><a href="{{ route('ourcountry.index') }}" class="btn btn-green">Köp maglumatlar</a></p>
                 </div>
-                <div class="col-lg-5" data-aos="fade-left">
+                <div class="col-lg-5 d-lg-block d-md-block d-sm-block d-none text-center" data-aos="fade-left">
                     <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid w-75">
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 </p>
             </div>
             <div class="row no-gutters">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
                         <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
@@ -68,7 +68,7 @@
                         <img src="{{ asset('img/gallery/9.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <a href="{{ asset('img/gallery/9.jpeg') }}" data-fancybox="gallery">
                         <img src="{{ asset('img/gallery/9.jpeg') }}" class="img-fluid p-1">
                     </a>
@@ -97,7 +97,7 @@
                         <img src="{{ asset('img/gallery/6.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
                         <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
@@ -126,7 +126,7 @@
                         <img src="{{ asset('img/gallery/9.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                     <a href="{{ asset('img/gallery/9.jpeg') }}" data-fancybox="gallery">
                         <img src="{{ asset('img/gallery/9.jpeg') }}" class="img-fluid p-1">
                     </a>

@@ -16,7 +16,7 @@
 
     <div class="container py-5 my-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-md-8">
                 <ul class="nav border-bottom" id="myTab" role="tablist">
                     <li class="h5 mr-5 text-green">Yurtlar</li>
                     <li class="nav-item">
@@ -536,7 +536,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 border-left">
+            <div class="col-lg-4 col-md-4 border-left">
                 <div class="border-bottom pl-4 py-3">
                     <div class="h5">Bellik: </div>
                 </div>

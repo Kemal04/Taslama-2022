@@ -17,7 +17,7 @@ class CreateThreemainsTable extends Migration
             $table->id();
             $table->string('name');
             $table->longText('title');
-            $table->string('img');
+            $table->string('img')->nullable();
         });
     }
 
