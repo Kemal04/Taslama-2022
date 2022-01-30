@@ -94,11 +94,15 @@
         }
 
         @keyframes show {
-            0%, 49.99% {
+
+            0%,
+            49.99% {
                 opacity: 0;
                 z-index: 1;
             }
-            50%, 100% {
+
+            50%,
+            100% {
                 opacity: 1;
                 z-index: 5;
             }
@@ -123,7 +127,7 @@
             /* background: #798bff;
             background: -webkit-linear-gradient(to right, #798bff, #9da4d1);
             background: linear-gradient(to right, #798bff, #9da4d1); */
-            background: linear-gradient(rgba( 0, 0, 0, 0.5 ), rgba( 0, 0, 0, 0.5)),url('../img/login/banner.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/login/banner.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -173,30 +177,51 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container py-5 my-5" id="container">
         <div class="form-container sign-up-container">
-            <form action="{{ route('register') }}" method="POST">
+            <form action="{{ route('register') }}" method="POST" class="form" style="align-items: baseline!important;">
                 @csrf
                 <h1>Hasap döret</h1>
-                <input type="text" id="inputName" placeholder="Ady" name="name" required autofocus autocomplete="off">
-                @error('name')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input class="" type="text" id="inputName" placeholder="Ady" name="name" required autofocus autocomplete="off">
+                        @error('name')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" id="inputName" placeholder="Familya" name="surename" required autofocus autocomplete="off" class="ml-5">
+                        @error('surename')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                </div>
 
                 <input type="email" id="inputEmail" placeholder="E-mail adresi" name="email" required autocomplete="off">
                 @error('email')
-                    <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
-                <input type="password" id="inputPassword"  placeholder="Açar sözi" name="password" required autocomplete="off">
-                @error('password')
+                <div class="input-group mb-3 align-items-end">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text border-0" style="height: 48px;" id="basic-addon1">+993</span>
+                    </div>
+                    <input type="number" style="position: relative;-ms-flex: 1 1 auto;flex: 1 1 auto;width: 1%;min-width: 0;margin-bottom: 0;" name="phone_number" placeholder="Telefon belgisi" aria-label="Username" aria-describedby="basic-addon1" required autofocus autocomplete="off">
+                    @error('phone_number')
                     <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <input type="password" id="inputPassword" placeholder="Açar sözi" name="password" required autocomplete="off">
+                @error('password')
+                <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
                 <input type="password" id="inputPasswordConfirmation" placeholder="Açar sözüni gaýtala" name="password_confirmation" required autocomplete="off">
                 @error('password')
-                    <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
                 <button type="submit" class="mt-3">Hasap döret</button>
@@ -208,11 +233,11 @@
                 <h1>Içeri gir</h1>
                 <input type="email" id="inputEmail" placeholder="E-mail adresi" name="email" autocomplete="off" required>
                 @error('email')
-                    <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
-                <input type="password" id="inputPassword"  placeholder="Açar sözi" name="password" autocomplete="off" required>
+                <input type="password" id="inputPassword" placeholder="Açar sözi" name="password" autocomplete="off" required>
                 @error('password')
-                    <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
                 <button type="submit" class="mt-3">Içeri gir</button>

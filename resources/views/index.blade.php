@@ -17,7 +17,7 @@
                 <div class="col-lg-4 text-white">
                     <div data-aos="fade-left"><small style="letter-spacing: 2px; font-weight: 700;">Jadyly tebigata Hoşgeldiniz!!!</small></div>
                     <div class="my-4">
-                        <h1 data-aos="fade-left" class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borçdyr</h1>
+                        <h1 data-aos="fade-left" class="font-weight-bold">Tebigaty aýawly saklamak - mukaddes borçdyr</h1>
                     </div>
                     <p class="mb-5" data-aos="fade-left" data-aos-delay="200">Ýurdumyzyň künjeklerinde, aýratyn-da, gözel paýtagtymyzyň töweregindäki dag eteklerinde el bilen döredilen ýaýlalar gök öwüsýär. Häzirki döwürde baýyrlyklar pürli we saýaly agaçlary bilen gözüňi dokundyrýar. El bilen döredilen tokaýlyklar ösüp boý alýar, her ýyl geçirilýän köpçülikleýin çäreler netijesinde, olaryň tutýan meýdany giňelýär.</p>
                     <p data-aos="fade-left" data-aos-delay="300" class=""><a href="{{ route('ourcountry.index') }}" class="btn btn-green">Köp maglumatlar</a></p>
@@ -182,41 +182,35 @@
 
     <div class="footer-bg py-5 my-5">
         <div class="container py-5">
-            <form>
-                <div class="row align-items-center text-center justify-content-center">
-                    <div class="col-lg-12 mb-5 display-4 border-bottom pb-3">
-                        Tebigatyň ösmegine goşant goşuň
-                    </div>
-                    <div class="col-lg-12 h5 mb-5 font-weight-normal" style="line-height: 30px;">
-                        - Tebigat adam üçin nämäni aňladýar? Bu - biziň dem alýan howamyz, içýän suwumyz, hasyl alýan topragymyz... Ol biziň saglygymyzyň we maddy durmuşymyzyň çeşmesidir
-                    </div>
+            <div class="row align-items-center text-center justify-content-center">
+                <div class="col-lg-12 mb-5 display-4 border-bottom pb-3">
+                    Tebigatyň ösmegine goşant goşuň
+                </div>
+                <div class="col-lg-12 h5 mb-5 font-weight-normal" style="line-height: 30px;">
+                    - Tebigat adam üçin nämäni aňladýar? Bu - biziň dem alýan howamyz, içýän suwumyz, hasyl alýan topragymyz... Ol biziň saglygymyzyň we maddy durmuşymyzyň çeşmesidir
+                </div>
+                <form action="{{ route('sendmoney.store') }}" method="post">
                     <div class="form-item">
                         <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
-                            <input id="amount-20" type="radio" name="price1" value="20" checked="true">
-                            <label for="amount-20">20 TMT</label>
+                            <input id="1" type="radio" name="money" value="20" checked="true">
+                            <label for="1">20 TMT</label>
                         </div>
                         <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
-                            <input id="amount-50" type="radio" name="price1" value="50">
-                            <label for="amount-50">50 TMT</label>
+                            <input id="2" type="radio" name="money" value="50">
+                            <label for="2">50 TMT</label>
                         </div>
                         <div class="radio-item">
-                            <input id="amount-100" type="radio" name="price1" value="100">
-                            <label for="amount-100">100 TMT</label>
+                            <input id="3" type="radio" name="money" value="100">
+                            <label for="3">100 TMT</label>
                         </div>
                     </div>
-                    <div class="col-lg-12 my-4">
-                        ya-da
-                    </div>
-                    <div class="col-lg-3 col-md-4 mb-4">
-                        <input type="number" min="10" class="form-control px-5" placeholder="100 TMT" style="border-radius: 30px; font-size: 30px;">
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="col-lg-12 d-flex justify-content-center mt-5">
                         <div class="w-50">
                             <button type="submit" class="btn btn-lg btn-block bg-green text-white font-weight-bolder">Kömek ber</button>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 

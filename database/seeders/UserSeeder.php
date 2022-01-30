@@ -17,6 +17,8 @@ class UserSeeder extends Seeder
     {
         $obj = new User;
         $obj->name = 'Administrasiya';
+        $obj->surename = 'Administrasiya';
+        $obj->phone_number = '63297877';
         $obj->email = 'admin@gmail.com';
         $obj->password = Hash::make('12345678');
         $obj->is_admin = 1;

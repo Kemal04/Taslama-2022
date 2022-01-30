@@ -70,22 +70,7 @@
                                             <h6 class="mb-0">Telefon belgisi</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            {{ auth()->user()->phone_number }}
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h6 class="mb-0">Adresi</h6>
-                                        </div>
-                                        <div class="col-sm-9 text-secondary">
-                                            {{ auth()->user()->adress }}
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a class="btn btn-green" data-toggle="modal" data-target="#exampleModalScrollable">Edit</a>
+                                            +993 {{ auth()->user()->phone_number }}
                                         </div>
                                     </div>
                                 </div>
@@ -220,49 +205,6 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form method="POST" action="" class="form">
-                        @csrf
-
-                        <input class="form-control mb-3" type="text" id="inputSurename" placeholder="Familyasy" name="surename" autocomplete="off" required>
-                        @error('surename')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">+993 </span>
-                            </div>
-                            <input type="number" class="form-control" placeholder="Telefon belgisi" aria-describedby="basic-addon1">
-                        </div>
-                        @error('phone_number')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-
-                        <input class="form-control mb-3" type="text" id="inputPasswordConfirmation" placeholder="Adresi" name="addres" required autocomplete="off">
-                        @error('addres')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                        @enderror
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-block btn-green">Save changes</button>
                 </div>
             </div>
         </div>

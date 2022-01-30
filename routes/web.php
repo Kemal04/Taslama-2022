@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\SendMoneyController;
 use App\Http\Controllers\ThreemainController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,9 @@ Route::get('/biz-barada/yurdumyzdaky-maglumatlar/{id}', [CityController::class, 
 Route::get('/ulanyjy-profili', [ProfilController::class, 'index'])->name('profil.index');
 
 Route::namespace('index')->middleware(['auth'])->group(function () {
+    Route::get('/pul-ugrat', [SendMoneyController::class, 'create'])->name('sendmoney.create');
+    Route::post('/pul-ugrat', [SendMoneyController::class, 'store'])->name('sendmoney.store');
+    
     Route::get('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'edit'])->name('main.edit');
     Route::post('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'update'])->name('main.update');
 });

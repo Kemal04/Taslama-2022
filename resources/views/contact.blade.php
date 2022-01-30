@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 shadow-lg p-5 bg-white" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
-                    <h3 class="mb-4">Get in touch</h3>
+                    <h3 class="mb-4">Habarlaşyň</h3>
                     <form method="post" action="{{ route('contact.store') }}" class="contactForm">
                         @csrf
                         <div class="row">

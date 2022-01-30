@@ -314,7 +314,76 @@
                         @foreach($cities as $city)
                         @if ($city->welayat_id == 2)
 
-                        {{ $city->welayat_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('ourcountry.show', $city->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($city->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $city->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($city['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach
@@ -324,7 +393,76 @@
                         @foreach($cities as $city)
                         @if ($city->welayat_id == 3)
 
-                        {{ $city->welayat_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('ourcountry.show', $city->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($city->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $city->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($city['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach
@@ -334,7 +472,76 @@
                         @foreach($cities as $city)
                         @if ($city->welayat_id == 4)
 
-                        {{ $city->welayat_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('ourcountry.show', $city->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($city->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $city->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($city['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach
@@ -344,7 +551,76 @@
                         @foreach($cities as $city)
                         @if ($city->welayat_id == 5)
 
-                        {{ $city->welayat_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('ourcountry.show', $city->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($city->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $city->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($city['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach
@@ -354,7 +630,76 @@
                         @foreach($cities as $city)
                         @if ($city->welayat_id == 6)
 
-                        {{ $city->welayat_id }}
+                        
+                        <div class="row border-bottom mb-3 p-3">
+                            <div class="col-lg-6">
+                                <a href="{{ route('ourcountry.show', $city->id) }}" class="card text-decoration-none">
+                                    <img src="{{ asset($city->img) }}" class="img-fluid">
+                                    <div class="card-body">
+                                        <div class="text-dark" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $city->name }}</div>
+                                        <div>
+                                            <p class="text-secondary mt-3"><?php echo (substr($city['title'], 0, 150) . '...'); ?></p>
+                                            <span class="text-decoration-none text-secondary">Sep 29, 2017 at 9:48 am</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/main-3.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Tebigaty aýawly saklamak – mukaddes borç</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;"> 31.09.2021, 13:31</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/1.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramagyň bütindünýä güni mynasybetli ylmy-amaly maslahat</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 12:45</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/2.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">BMG-niň Biologik dürlülik hakyndaky konwensiýasy</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">30.09.2021, 10:48</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3 shadow-sm">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-3 d-flex justify-content-center">
+                                            <img src="{{ asset('img/about/ourcountry/bagul.jpg') }}" class="card-img">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body p-0 px-2 py-1">
+                                                <div class="font-weight-bold">Daşky gurşawy goramak häzirki we geljekki nesiller barada aladadyr</div>
+                                                <p class="mt-2"><a href="#" class="text-secondary" style="font-size: 12px;">29.09.2021, 19:30</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         @endif
                         @endforeach
