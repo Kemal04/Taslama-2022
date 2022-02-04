@@ -13,7 +13,7 @@
 })(jQuery);
 
 new Splide('#main-slider', {
-    perPage: 3,
+    perPage: 1,
     perMove: 1,
     pagination: false,
     breakpoints: {

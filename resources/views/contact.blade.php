@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <div class="container my-5 py-5">
+    <!-- <div class="container my-5 py-5">
         <div id="main-slider" class="splide d-flex justify-content-center">
             <div class="splide__track" style="width: 90%!important;">
                 <ul class="splide__list">
@@ -142,7 +142,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     @include ('app.footer')
