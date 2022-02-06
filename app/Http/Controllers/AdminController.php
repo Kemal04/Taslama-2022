@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Threemain;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -36,7 +37,11 @@ class AdminController extends Controller
 
     public function home()
     {
-        return view('admin.home');
+        $mains = Threemain::get();
+
+        return view('admin.home')->with([
+            'mains' => $mains,
+        ]);
     }
 
     public function about()

@@ -27,31 +27,31 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-3">
-                            <div class="info-box">
+                            <a href="{{ route('admin.user') }}" class="info-box text-dark">
                                 <span class="info-box-icon bg-info elevation-1 d-flex"><i class="fas fa-user"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Ulanyjylar</span>
                                     <span class="info-box-number">{{ auth()->user()->latest()->first()->id }}</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-3">
-                            <div class="info-box">
+                            <a href="{{ route('admin.history_action') }}" class="info-box text-dark">
                                 <span class="info-box-icon bg-danger elevation-1 d-flex"><i class="fas fa-walking"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Geçirilen çäreler</span>
                                     <span class="info-box-number">12</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-3">
-                            <div class="info-box">
+                            <a href="{{ route('admin.foreign') }}" class="info-box text-dark">
                                 <span class="info-box-icon bg-warning elevation-1 d-flex"><i class="fas fa-book"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Blog sany</span>
                                     <span class="info-box-number">112</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-3">
                             <div class="info-box">
@@ -74,7 +74,7 @@
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p class="text-center">
-                                                <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                                                <strong>2015-nji ýylda häzirki ýyl aralygy</strong>
                                             </p>
                                             <div class="chart">
                                                 <canvas id="salesChart" height="360" style="height: 180px; display: block; width: 607px;" width="1214" class="chartjs-render-monitor"></canvas>
@@ -85,31 +85,17 @@
                                                 <strong>Goal Completion</strong>
                                             </p>
                                             <div class="progress-group">
-                                                Add Products to Cart
-                                                <span class="float-right"><b>160</b>/200</span>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar bg-primary" style="width: 80%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-group">
-                                                Complete Purchase
-                                                <span class="float-right"><b>310</b>/400</span>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar bg-danger" style="width: 75%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="progress-group">
-                                                <span class="progress-text">Visit Premium Page</span>
+                                                <span class="progress-text">Agaçlaryň köpelişi</span>
                                                 <span class="float-right"><b>480</b>/800</span>
                                                 <div class="progress progress-sm">
                                                     <div class="progress-bar bg-success" style="width: 60%"></div>
                                                 </div>
                                             </div>
                                             <div class="progress-group">
-                                                Send Inquiries
-                                                <span class="float-right"><b>250</b>/500</span>
+                                                <span class="progress-text">Hapa howanyň arassalanşy</span>
+                                                <span class="float-right"><b>160</b>/200</span>
                                                 <div class="progress progress-sm">
-                                                    <div class="progress-bar bg-warning" style="width: 50%"></div>
+                                                    <div class="progress-bar bg-primary" style="width: 80%"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,32 +103,18 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
-                                        <div class="col-sm-3 col-6">
+                                        <div class="col-sm-6 col-6">
                                             <div class="description-block border-right">
-                                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 17%</span>
-                                                <h5 class="description-header">$35,210.43</h5>
-                                                <span class="description-text">TOTAL REVENUE</span>
+                                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 25%</span>
+                                                <h5 class="description-header">150.000.000</h5>
+                                                <span class="description-text">2015-2022 aralyk</span>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-6">
+                                        <div class="col-sm-6 col-6">
                                             <div class="description-block border-right">
-                                                <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 0%</span>
-                                                <h5 class="description-header">$10,390.90</h5>
-                                                <span class="description-text">TOTAL COST</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 col-6">
-                                            <div class="description-block border-right">
-                                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
-                                                <h5 class="description-header">$24,813.53</h5>
-                                                <span class="description-text">TOTAL PROFIT</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 col-6">
-                                            <div class="description-block">
-                                                <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 18%</span>
-                                                <h5 class="description-header">1200</h5>
-                                                <span class="description-text">GOAL COMPLETIONS</span>
+                                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 30%</span>
+                                                <h5 class="description-header">450.000.000 <small>TMT</small></h5>
+                                                <span class="description-text">Ekilen agaclaryn bahasy</span>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +190,7 @@
             var salesChartCanvas = $('#salesChart').get(0).getContext('2d')
 
             var salesChartData = {
-                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
                 datasets: [{
                         label: 'Agaçlaryň köpelişi',
                         backgroundColor: 'rgba(53, 164, 98, 0.9)',
@@ -228,11 +200,11 @@
                         pointStrokeColor: 'rgba(60,141,188,1)',
                         pointHighlightFill: '#fff',
                         pointHighlightStroke: 'rgba(60,141,188,1)',
-                        data: [20, 60, 30, 80, 70, 60, 100]
+                        data: [10, 30, 40, 50, 60, 80, 100, 150]
                         // Gok renk bolumi
                     },
                     {
-                        label: 'Howanyň arassalanşy',
+                        label: 'Hapa howanyň arassalanşy',
                         backgroundColor: 'rgba(7, 126, 253, 0.4)',
                         borderColor: 'rgba(7, 126, 253, 0.3)',
                         pointRadius: false,
@@ -240,7 +212,7 @@
                         pointStrokeColor: '#c1c7d1',
                         pointHighlightFill: '#fff',
                         pointHighlightStroke: 'rgba(220,220,220,1)',
-                        data: [90, 93, 80, 76, 56, 55, 40]
+                        data: [90, 93, 80, 76, 56, 55, 50, 45]
                         // Gara renk bolumi
                     },
                     // {

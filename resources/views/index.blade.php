@@ -54,48 +54,11 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up">
                 <div class="card border-0 mr-4" style="background-color: transparent;">
                     <img src="{{ asset( $main->img ) }}" class="img-fluid">
-                    @guest
-                    @else
-                    @if(auth()->user()->is_admin)
-                    <div class="card-img-overlay">
-                        <div class="d-flex justify-content-between">
-                            <button class="btn btn-warning btn-sm" type="button" data-toggle="modal" data-target="#exampleModal{{ $main->id }}"><i class="fa fa-pencil-alt"></i></button>
-                        </div>
-                    </div>
-                    @endif
-                    @endguest
                     <div class="card-body p-0 my-3">
-                        <span class="text-secondary mb-2 d-block">15 Jan 2020 <span class="mx-2">•</span> By Pastor Campbell </span>
+                        <span class="text-secondary mb-2 d-block">15 Ýanwar 2022 <span class="mx-2">•</span> Administrasiýa </span>
                         <div class="my-3 h5">{{ $main->name }}</div>
                         <p class="mb-3 text-secondary"><?php echo (substr($main['title'], 0, 160) . '...'); ?></p>
                         <a href="{{ route('main.show', $main->id) }}" class="btn btn-green">Doly oka</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="exampleModal{{ $main->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Düzediş giriz</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="" method="post" action="{{ route('main.update', $main->name) }}">
-                                @csrf
-                                <div class="form-group mb-3">
-                                    <label for="exampleInputEmail1">Ady</label>
-                                    <input placeholder="{{ $main->name }}" type="name" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Text</label>
-                                    <textarea placeholder="{{ $main->title }}" name="title" placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-green btn-block">Submit</button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@ class ThreemainController extends Controller
             abort(403);
         }
 
-        return view('index')->with([
+        return view('admin.home')->with([
             'mains' => $mains,
         ]);
     }
@@ -39,7 +39,7 @@ class ThreemainController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'title' => 'required|string|max:1000',
-            'img' => 'nullable|image|mimes:jpg,jpeg,png|max:10000',
+            'img' => 'required|image|mimes:jpg,jpeg,png|max:10000',
         ]);
 
         $mains = Threemain::whereName($name)
@@ -47,16 +47,16 @@ class ThreemainController extends Controller
 
         $mains->name = $request->name;
         $mains->title = $request->title;
-        if ($request->hasfile('img')) {
-            $img = $request->file('img');
-            $imgName = Str::title($request->name) . '.' . $img->getClientOriginalExtension();
-            $path = 'public/main/';
-            $img->storeAs($path, $imgName);
-            $mains->img = 'main/' . $imgName;
+        if ($request->hasfile('image')) {
+            $image = $request->file('image');
+            $imageName = Str::title($request->name) . '.' . $image->getClientOriginalExtension();
+            $path = 'public/b/';
+            $image->storeAs($path, $imageName);
+            $mains->image = 'b/' . $imageName;
         }
 
         $mains->save();
 
-        return redirect()->route('index');
+        return redirect()->route('admin.home');
     }
 }
