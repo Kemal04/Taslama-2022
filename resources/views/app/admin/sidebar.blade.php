@@ -27,12 +27,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.about') }}" class="nav-link">
-                                <i class="fas fa-users-cog mr-1"></i>
-                                <p> Biz barada </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="{{ route('admin.gallery') }}" class="nav-link">
                                 <i class="fas fa-images mr-1"></i>
                                 <p> Galereýa </p>

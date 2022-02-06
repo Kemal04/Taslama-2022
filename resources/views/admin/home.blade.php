@@ -14,17 +14,17 @@
 
         <div class="content-wrapper">
             <div class="content-header">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Administrasiýa</h1>
+                            <h1 class="m-0 text-dark">Esasy Sahypa</h1>
                         </div>
                     </div>
                 </div>
             </div>
 
             <section class="content">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         @foreach($mains as $main)
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up">
@@ -33,7 +33,7 @@
                                 <div class="card-body p-0 my-3 px-3">
                                     <span class="text-secondary mb-2 d-block">15 Ýanwar 2022 <span class="mx-2">•</span> Administrasiýa </span>
                                     <div class="my-3 h5">{{ $main->name }}</div>
-                                    <p class="mb-3 text-secondary"><?php echo (substr($main['title'], 0, 130) . '...'); ?></p>
+                                    <p class="mb-3 text-secondary"><?php echo (substr($main['title'], 0, 120) . '...'); ?></p>
                                     <button class="btn btn-block btn-green btn-sm" type="button" data-toggle="modal" data-target="#exampleModal{{ $main->id }}">
                                         Üýtget
                                     </button>

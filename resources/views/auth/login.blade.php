@@ -184,45 +184,53 @@
             <form action="{{ route('register') }}" method="POST" class="form" style="align-items: baseline!important;">
                 @csrf
                 <h1>Hasap döret</h1>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <input class="" type="text" id="inputName" placeholder="Ady" name="name" required autofocus autocomplete="off">
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <input type="text" id="inputName" placeholder="Ady" name="name" required autofocus autocomplete="off">
                         @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="col-lg-6">
-                        <input type="text" id="inputName" placeholder="Familya" name="surename" required autofocus autocomplete="off" class="ml-5">
+                    <div class="form-group col-lg-6">
+                        <input type="text" id="inputName" placeholder="Familya" name="surename" required autofocus autocomplete="off">
                         @error('surename')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
-                </div>
 
-                <input type="email" id="inputEmail" placeholder="E-mail adresi" name="email" required autocomplete="off">
-                @error('email')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-
-                <div class="input-group mb-3 align-items-end">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text border-0" style="height: 48px;" id="basic-addon1">+993</span>
+                    <div class="form-group col-lg-12">
+                        <input type="email" id="inputEmail" placeholder="E-mail adresi" name="email" required autocomplete="off">
+                        @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                     </div>
-                    <input type="number" style="position: relative;-ms-flex: 1 1 auto;flex: 1 1 auto;width: 1%;min-width: 0;margin-bottom: 0;" name="phone_number" placeholder="Telefon belgisi" aria-label="Username" aria-describedby="basic-addon1" required autofocus autocomplete="off">
-                    @error('phone_number')
-                    <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
+
+                    <div class="form-group col-lg-12">
+                        <div class="input-group mb-3 align-items-end">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text border-0" style="height: 48px;" id="basic-addon1">+993</span>
+                            </div>
+                            <input type="number" style="position: relative;-ms-flex: 1 1 auto;flex: 1 1 auto;width: 1%;min-width: 0;margin-bottom: 0;" name="phone_number" placeholder="Telefon belgisi" aria-label="Username" aria-describedby="basic-addon1" required autofocus autocomplete="off">
+                            @error('phone_number')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <input type="password" id="inputPassword" placeholder="Açar sözi" name="password" required autocomplete="off">
+                        @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <input type="password" id="inputPasswordConfirmation" placeholder="Açar sözüni gaýtala" name="password_confirmation" required autocomplete="off">
+                        @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
                 </div>
-
-                <input type="password" id="inputPassword" placeholder="Açar sözi" name="password" required autocomplete="off">
-                @error('password')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-
-                <input type="password" id="inputPasswordConfirmation" placeholder="Açar sözüni gaýtala" name="password_confirmation" required autocomplete="off">
-                @error('password')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
 
                 <button type="submit" class="mt-3">Hasap döret</button>
             </form>
