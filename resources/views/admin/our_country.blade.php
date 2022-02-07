@@ -30,13 +30,13 @@
                 <section class="content">
                     <div class="container">
                         <div class="row">
-                            @foreach($foreigns as $foreign)
+                            @foreach($ourcountries as $ourcountry)
                             <div class="col-lg-4">
                                 <div class="card">
-                                    <img src="{{ asset($foreign->img) }}" class="img-fluid" style="height: 200px!important;">
+                                    <img src="{{ asset($ourcountry->img) }}" class="img-fluid" style="height: 200px!important;">
                                     <div class="card-body text-center">
-                                        <div class="card-header">{{ substr($foreign->name, 0, 30) }}...</div>
-                                        <div class="card-text">{{ substr($foreign->title, 0, 90) }}...</div>
+                                        <div class="card-header">{{ substr($ourcountry->name, 0, 30) }}...</div>
+                                        <div class="card-text">{{ substr($ourcountry->title, 0, 90) }}...</div>
                                     </div>
                                 </div>
                             </div>

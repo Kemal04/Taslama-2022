@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\City;
 use App\Models\Contact;
 use App\Models\Foreign;
 use App\Models\Threemain;
@@ -67,16 +68,20 @@ class AdminController extends Controller
 
     public function our_country()
     {
-        $ourcountry = Our::with('countries')
+        $ourcountries = City::with('welayats')
             ->get();;
 
-        return view('admin.foreign')->with([
-            'ourcountry' => $ourcountry,
+        return view('admin.our_country')->with([
+            'ourcountries' => $ourcountries,
         ]);
     }
 
     public function contact()
     {
-        return view('admin.contact');
+        $contacts = Contact::get();;
+
+        return view('admin.contact')->with([
+            'contacts' => $contacts,
+        ]);
     }
 }

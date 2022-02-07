@@ -134,7 +134,7 @@
 
                                         @foreach($users->take(8) as $user)
                                         <li>
-                                            <img src="{{ asset('img/user.jpeg') }}" class="img-fluid w-50">
+                                            <img src="{{ asset('img/user.svg') }}" class="img-fluid w-50">
                                             <a class="users-list-name" href="#">{{ $user->name }}</a>
                                             <span class="users-list-date">{{ $user->surename }}</span>
                                         </li>
@@ -159,7 +159,7 @@
                                                     <div class="mt-3" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $contact->subject }}</div>
                                                     <p class="text-secondary mt-3">{{ $contact->comment }}</p>
                                                     <div class="d-flex align-items-center mt-5">
-                                                        <img src="{{ asset('img/user.jpeg') }}" class="img-fluid rounded-circle" style="width: 10%;">
+                                                        <img src="{{ asset('img/user.svg') }}" class="img-fluid rounded-circle" style="width: 10%;">
                                                         <div class="ml-3 text-danger">
                                                             <div class="" style="font-size: 18px; font-weight: 700; line-height: 1.3;">{{ $contact->name }}</div>
                                                             <div class="">{{ $contact->email }}</div>

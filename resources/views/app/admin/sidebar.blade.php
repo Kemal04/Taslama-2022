@@ -2,7 +2,7 @@
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('img/user.jpeg') }}" class="img-circle elevation-2">
+                        <img src="{{ asset('img/user.svg') }}" class="img-circle elevation-2">
                     </div>
                     <div class="info">
                         <a href="{{ route('admin.index') }}" class="d-block text-uppercase">{{ auth()->user()->name }}</a>
