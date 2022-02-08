@@ -1,6 +1,9 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="{{ asset('img/user.jpeg') }}" class="img-circle elevation-2">
+                    </div>
                     <div class="info">
                         <a href="{{ route('admin.index') }}" class="d-block text-uppercase">{{ auth()->user()->name }}</a>
                     </div>
@@ -24,12 +27,6 @@
                             <a href="{{ route('admin.home') }}" class="nav-link">
                                 <i class="fas fa-home mr-1"></i>
                                 <p> Baş sahypa </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.gallery') }}" class="nav-link">
-                                <i class="fas fa-images mr-1"></i>
-                                <p> Galereýa </p>
                             </a>
                         </li>
                         <li class="nav-item">

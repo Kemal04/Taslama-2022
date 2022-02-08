@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Foreign;
 use App\Models\Threemain;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -56,12 +57,22 @@ class AdminController extends Controller
 
     public function foreign()
     {
-        return view('admin.foreign');
+        $foreigns = Foreign::with('countries')
+            ->get();;
+
+        return view('admin.foreign')->with([
+            'foreigns' => $foreigns,
+        ]);
     }
 
     public function our_country()
     {
-        return view('admin.our_country');
+        $ourcountry = Our::with('countries')
+            ->get();;
+
+        return view('admin.foreign')->with([
+            'ourcountry' => $ourcountry,
+        ]);
     }
 
     public function contact()
