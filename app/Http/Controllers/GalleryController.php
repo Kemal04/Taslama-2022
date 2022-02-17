@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
-    public function gallery()
+    public function index()
     {
         $galleries = Gallery::get();
 
-        return view('gallery')->with([
+        return view('gallery.index')->with([
             'galleries' => $galleries,
         ]);
     }

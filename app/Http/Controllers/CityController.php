@@ -16,7 +16,7 @@ class CityController extends Controller
         $cities = City::with('welayats')
             ->get();
 
-        return view('about.ourcountry')->with([
+        return view('ourcountry.index')->with([
             'welayats' => $welayats,
             'cities' => $cities,
         ]);
@@ -27,7 +27,7 @@ class CityController extends Controller
         $city = City::whereId($id)
             ->firstOrFail();
 
-        return view('about.ourcountry-show')->with([
+        return view('ourcountry.show')->with([
             'city' => $city,
         ]);
     }

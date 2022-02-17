@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <a href="{{ route('gallery') }}" class="btn btn-outline-dark px-5" style="border-radius: 30px;">Galereya</a>
+                <a href="{{ route('gallery.index') }}" class="btn btn-outline-dark px-5" style="border-radius: 30px;">Galereya</a>
             </div>
         </div>
     </section>

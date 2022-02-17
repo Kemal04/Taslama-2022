@@ -16,7 +16,7 @@ class ForeignController extends Controller
         $foreigns = Foreign::with('countries')
             ->get();
 
-        return view('about.foreign')->with([
+        return view('foreign.index')->with([
             'foreigns' => $foreigns,
             'countries' => $countries,
         ]);
@@ -27,7 +27,7 @@ class ForeignController extends Controller
         $foreign = Foreign::whereId($id)
             ->firstOrFail();
 
-        return view('about.foreign-show')->with([
+        return view('foreign.show')->with([
             'foreign' => $foreign,
         ]);
     }

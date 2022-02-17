@@ -102,7 +102,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-lg-12">
-                            <a href="{{ route('contact') }}" class="btn btn-green btn-block">Sorag ugrat</a>
+                            <a href="{{ route('contact.index') }}" class="btn btn-green btn-block">Sorag ugrat</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,6 @@
                     <img src="{{ asset('img/icons/seed.svg') }}" class="img-fluid w-25 mb-3">
                     <div style="font-size: 18px; font-weight: 700;">Ştili topraga ýerleşdirmek</div>
                     <p class="text-secondary">Ilki bilen topragy ştile göra gazmaly we sonra ştili gazylan çukura ýerleşdirmeli</p>
-                    <p><a href="#" class="text-green text-decoration-none">Doly oka</a></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up">
@@ -129,7 +128,6 @@
                     <img src="{{ asset('img/icons/water.svg') }}" class="img-fluid w-25 mb-3">
                     <div style="font-size: 18px; font-weight: 700;">Ilkinji suwuny bermek</div>
                     <p class="text-secondary">Indi bolsa ştiliň ilkinji suwuny bermeli we her gün hem ştile ýeterlik suw berip durmaly</p>
-                    <p><a href="#" class="text-green text-decoration-none">Doly oka</a></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up">
@@ -137,13 +135,12 @@
                     <img src="{{ asset('img/icons/tree.svg') }}" class="img-fluid w-25 mb-3">
                     <div style="font-size: 18px; font-weight: 700;">Wagtyň geçmegi bilen</div>
                     <p class="text-secondary">Günleriň, aylaryň geçmegi bilen ştilimiz agaja öwrüler, miwe bermäge başlar</p>
-                    <p><a href="#" class="text-green text-decoration-none">Doly oka</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-bg py-5 my-5">
+    <div class="footer-bg py-5 mt-5">
         <div class="container py-5">
             <div class="row align-items-center text-center justify-content-center">
                 <div class="col-lg-12 mb-5 display-4 border-bottom pb-3">

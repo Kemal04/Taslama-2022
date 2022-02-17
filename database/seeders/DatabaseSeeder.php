@@ -30,5 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call(WelayatSeeder::class);
 
         $this->call(CitySeeder::class);
+
+        $this->call(HistoryActionSeeder::class);
     }
 }

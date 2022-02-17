@@ -7,19 +7,19 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function contact()
+    public function index()
     {
         $contacts = Contact::orderBy('id', 'desc')
             ->paginate(12);
 
-        return view('contact')->with([
+        return view('contact.index')->with([
             'contacts' => $contacts,
         ]);
     }
 
     public function create()
     {
-        return view('contact');
+        return view('contact.index');
     }
 
 
@@ -44,7 +44,7 @@ class ContactController extends Controller
         ]);
 
 
-        return view('contact')->with([
+        return view('contact.index')->with([
             'contacts' => $contacts,
         ]);
     }

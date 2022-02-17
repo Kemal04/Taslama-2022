@@ -60,13 +60,6 @@
                                                 <label for="exampleFormControlTextarea1">Tekst</label>
                                                 <textarea placeholder="{{ $main->title }}" name="title" placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="img">Suraty</label>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="img" name="img">
-                                                    <label class="custom-file-label" for="customFile">Saýla</label>
-                                                </div>
-                                            </div>
                                             <button type="submit" class="btn btn-green btn-block">Düzelt</button>
                                         </form>
                                     </div>

@@ -106,7 +106,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <button class="btn btn-green mt-3 px-5" style="border-radius: 30px;">Ugrat</button>
+                                    <button type="submit" class="btn btn-green mt-3 px-5" style="border-radius: 30px;">Ugrat</button>
                                 </div>
                             </div>
                         </div>

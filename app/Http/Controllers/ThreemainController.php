@@ -39,7 +39,6 @@ class ThreemainController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'title' => 'required|string|max:1000',
-            'img' => 'required|image|mimes:jpg,jpeg,png|max:10000',
         ]);
 
         $mains = Threemain::whereName($name)
@@ -47,14 +46,6 @@ class ThreemainController extends Controller
 
         $mains->name = $request->name;
         $mains->title = $request->title;
-        if ($request->hasfile('image')) {
-            $image = $request->file('image');
-            $imageName = Str::title($request->name) . '.' . $image->getClientOriginalExtension();
-            $path = 'public/b/';
-            $image->storeAs($path, $imageName);
-            $mains->image = 'b/' . $imageName;
-        }
-
         $mains->save();
 
         return redirect()->route('admin.home');

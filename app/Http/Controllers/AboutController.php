@@ -20,16 +20,6 @@ class AboutController extends Controller
 
     public function statik()
     {
-        return view('about.statik');
-    }
-
-    public function foreign()
-    {
-        return view('foreign.index');
-    }
-
-    public function ourcountry()
-    {
-        return view('about.ourcountry');
+        return view('statik.statik');
     }
 }
