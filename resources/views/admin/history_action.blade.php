@@ -26,50 +26,35 @@
                         </div>
                     </div>
                     <div class="row">
+                        @foreach($history_actions as $history_action)
                         <div class="col-lg-4">
-                            <div class="card">
+                            <div class="card border-0" style="background-color: transparent;">
                                 <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid">
-                                <div class="card-body">
-                                    <div class="row justify-content-center align-items-center text-center">
-                                        <div class="h4">
-                                            Saglyk ýol
-                                            <i class="fas fa-check-circle ml-3 text-success"></i>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
+                                <div class="card-body my-3">
+                                    <div class="row align-items-center">
                                         <div class="col-sm-4">
                                             <h6 class="mb-0">Çäräň ýerleşýän ýeri</h6>
                                         </div>
                                         <div class="col-sm-8 text-secondary">
-                                            Aşgabat şäheri, Saglyk ýoly
+                                            {{ $history_action->address }}
                                         </div>
                                     </div>
                                     <hr>
-                                    <div class="row">
+                                    <div class="row align-items-center">
                                         <div class="col-lg-4">
                                             <h6 class="mb-0">Edilmeli işler</h6>
                                         </div>
                                         <div class="col-lg-8 text-secondary">
-                                            Agaç ekmek
+                                            {{ $history_action->misson }}
                                         </div>
                                     </div>
                                     <hr>
-                                    <div class="row">
+                                    <div class="row mb-3 align-items-center">
                                         <div class="col-lg-4">
                                             <h6 class="mb-0">Edimeli işiň mukdary</h6>
                                         </div>
                                         <div class="col-lg-8 text-secondary">
-                                            1.000 agaç ekmeli
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Geçirilen çäräň çagty</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            2 sagat
+                                            {{ $history_action->misson_amount }}
                                         </div>
                                     </div>
                                     <hr>
@@ -78,48 +63,7 @@
                                             <h6 class="mb-0">Çäräniň başlaýan wagty</h6>
                                         </div>
                                         <div class="col-lg-8 text-secondary">
-                                            13:00 | 13.05.2022
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid">
-                                <div class="card-body">
-                                    <div class="row justify-content-center align-items-center text-center">
-                                        <div class="h4">
-                                            Saglyk ýol
-                                            <i class="fas fa-hourglass-half ml-3 text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <h6 class="mb-0">Çäräň ýerleşýän ýeri</h6>
-                                        </div>
-                                        <div class="col-sm-8 text-secondary">
-                                            Aşgabat şäheri, Saglyk ýoly
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Edilmeli işler</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            Agaç ekmek
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Edimeli işiň mukdary</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            1.000 agaç ekmeli
+                                            {{ $history_action->time_start }}
                                         </div>
                                     </div>
                                     <hr>
@@ -128,80 +72,13 @@
                                             <h6 class="mb-0">Geçirilen çäräň çagty</h6>
                                         </div>
                                         <div class="col-lg-8 text-secondary">
-                                            2 sagat
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Çäräniň başlaýan wagty</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            13:00 | 13.05.2022
+                                            {{ $history_action->time }} sagat
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid">
-                                <div class="card-body">
-                                    <div class="row justify-content-center align-items-center text-center">
-                                        <div class="h4">
-                                            Saglyk ýol
-                                            <i class="fas fa-times-circle ml-3 text-danger"></i>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <h6 class="mb-0">Çäräň ýerleşýän ýeri</h6>
-                                        </div>
-                                        <div class="col-sm-8 text-secondary">
-                                            Aşgabat şäheri, Saglyk ýoly
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Edilmeli işler</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            Agaç ekmek
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Edimeli işiň mukdary</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            1.000 agaç ekmeli
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Geçirilen çäräň çagty</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            2 sagat
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Çäräniň başlaýan wagty</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            13:00 | 13.05.2022
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

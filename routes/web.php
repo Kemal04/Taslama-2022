@@ -51,6 +51,7 @@ Route::get('/biz-barada/dasary-yurlardaky-maglumatlar/{id}', [ForeignController:
 
 //HISTORY-ACTION PAGES
 Route::get('/careler', [HistoryActionController::class, 'index'])->name('history_action.index');
+Route::get('/careler/{name}', [HistoryActionController::class, 'show'])->name('history_action.show');
 //HISTORY-ACTION PAGES
 
 //THREEMAIN PAGES

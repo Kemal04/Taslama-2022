@@ -4,7 +4,7 @@
 <head>
     @include ('app.meta')
 
-    <title>27-nji Mekdep</title>
+    <title>Tebigaty Goramak | Galereýa</title>
 </head>
 
 <body style="background-color: #f5f0e9; font-size: 14px;">

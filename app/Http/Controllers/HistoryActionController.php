@@ -12,8 +12,18 @@ class HistoryActionController extends Controller
     {
         $history_actions = HistoryAction::get();
 
-        return view('history_action')->with([
+        return view('history-action.index')->with([
             'history_actions' => $history_actions,
+        ]);
+    }
+
+    public function show($name)
+    {
+        $history_action = HistoryAction::whereName($name)
+            ->firstOrFail();
+
+        return view('history-action.show')->with([
+            'history_action' => $history_action,
         ]);
     }
 }

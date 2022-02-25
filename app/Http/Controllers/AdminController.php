@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\City;
 use App\Models\Contact;
 use App\Models\Foreign;
+use App\Models\HistoryAction;
 use App\Models\Threemain;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -34,7 +35,11 @@ class AdminController extends Controller
 
     public function history_action()
     {
-        return view('admin.history_action');
+        $history_actions = HistoryAction::get();
+
+        return view('admin.history_action')->with([
+            'history_actions' => $history_actions,
+        ]);
     }
 
     public function home()

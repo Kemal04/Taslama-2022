@@ -4,7 +4,7 @@
 <head>
     @include ('app.meta')
 
-    <title>27-nji Mekdep</title>
+    <title>Tebigaty Goramak | Biz Barada</title>
 </head>
 
 <body style="background-color: #f5f0e9; font-size: 14px;">
@@ -85,40 +85,40 @@
             <div class="text-center">
                 <div class="display-4">Tebigata Syn etmek</div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum soluta ut ipsum aperiam
+                    Ýurdumyzdaky bolup geçýän çäreleriň suratlary
                 </p>
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery" data-aos="fade-left" >
                         <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery" data-aos="fade-left" >
                         <img src="{{ asset('img/gallery/2.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery" data-aos="fade-left" >
                         <img src="{{ asset('img/gallery/4.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <a href="{{ asset('img/gallery/5.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/5.jpeg') }}" data-fancybox="gallery" data-aos="fade-up" >
                         <img src="{{ asset('img/gallery/5.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/3.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/3.jpeg') }}" data-fancybox="gallery" data-aos="fade-up" >
                         <img src="{{ asset('img/gallery/3.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery" data-aos="fade-up" >
                         <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/1.jpeg') }}" data-fancybox="gallery" data-aos="fade-right" >
                         <img src="{{ asset('img/gallery/1.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/2.jpeg') }}" data-fancybox="gallery" data-aos="fade-right" >
                         <img src="{{ asset('img/gallery/2.jpeg') }}" class="img-fluid p-1">
                     </a>
-                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery">
+                    <a href="{{ asset('img/gallery/4.jpeg') }}" data-fancybox="gallery" data-aos="fade-right" >
                         <img src="{{ asset('img/gallery/4.jpeg') }}" class="img-fluid p-1">
                     </a>
                 </div>

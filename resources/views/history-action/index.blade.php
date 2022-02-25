@@ -4,7 +4,7 @@
 <head>
     @include ('app.meta')
 
-    <title>Tebigaty Goramak</title>
+    <title>Tebigaty Goramak | Çäreler</title>
 </head>
 
 <body style="background-color: #f5f0e9; font-size: 14px;">
@@ -41,7 +41,7 @@
                     <img src="{{ asset('img/banners/card.jpeg') }}" class="img-fluid">
                     <div class="card-body p-0 my-3">
                         <span class="text-secondary mb-2 d-block">{{ $history_action->created_at }} <span class="mx-2">•</span> Administrasiýa </span>
-                        <div class="my-3 h5">{{ $history_action->name }}</div>
+                        <div class="my-3 mb-4 h5">{{ $history_action->name }}</div>
                         <div class="row align-items-center">
                             <div class="col-sm-4">
                                 <h6 class="mb-0">Çäräň ýerleşýän ýeri</h6>
@@ -68,7 +68,7 @@
                                 {{ $history_action->misson_amount }}
                             </div>
                         </div>
-                        <!-- <a href="" class="btn btn-green">Doly oka</a> -->
+                        <a href="{{ route('history_action.show', $history_action->name) }}" class="btn btn-green btn-block mt-3">Doly oka</a>
                     </div>
                 </div>
             </div>

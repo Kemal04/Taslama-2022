@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Login | Register</title>
+    <title>Tebigaty Goramak | Giriş</title>
 
     @include ('app.meta')
 

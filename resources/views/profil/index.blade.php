@@ -4,7 +4,7 @@
 <head>
     @include ('app.meta')
 
-    <title>Tebigaty Goramak</title>
+    <title>Tebigaty Goramak | {{ auth()->user()->name }}</title>
 </head>
 
 <body style="background-color: #f5f0e9; font-size: 14px;">

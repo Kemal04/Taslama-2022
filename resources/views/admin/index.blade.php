@@ -82,7 +82,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <p class="text-center">
-                                                <strong>Goal Completion</strong>
+                                                <strong>Agaçlaryň istatistikasy</strong>
                                             </p>
                                             <div class="progress-group">
                                                 <span class="progress-text">Agaçlaryň köpelişi</span>

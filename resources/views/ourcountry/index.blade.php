@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-    <title>ThreeMain Show</title>
+    <title>Tebigaty Goramak | Biziň Ýurdumyzdaky Täzelikler</title>
 
     @include('app.meta')
 </head>
