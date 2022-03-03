@@ -131,44 +131,22 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                            <div class="card bg-success text-white mb-3 border-0 rounded-0">
+                            @foreach($sendmoneys as $sendmoney)
+                            <div class="card bg-green text-white mb-3 border-0 rounded-0">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <h6 class="mb-0">Berilen Komek : 200 TMT</h6>
+                                            <h6 class="mb-0">Berilen Komek : {{ $sendmoney->money }} TMT</h6>
                                         </div>
                                         <div class="col-sm-6">
-                                            Berilen wagty : 12.12.2021
+                                            Berilen wagty : {{ $sendmoney->created_at }}
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card bg-success text-white mb-3 border-0 rounded-0">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h6 class="mb-0">Berilen Komek : 50 TMT</h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            Berilen wagty : 14.12.2021
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card bg-danger text-white mb-3 border-0 rounded-0">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h6 class="mb-0">Berilen Komek : 500 TMT</h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            Berilen wagty : 18.12.2021
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">   
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
                             <form method="post" action="{{ route('contact.store') }}" class="contactForm">
                                 @csrf
                                 <div class="row">

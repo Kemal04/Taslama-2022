@@ -15,21 +15,17 @@ class SendMoneyController extends Controller
 
     public function store(Request $request)
     {
-
-        $moneys = Send_money::get();
-
         $request->validate([
-            'user_id' => 'required',
-            'money' => 'required|min:10|number',
+            'money' => 'required|integer|min:0',
         ]);
 
-        Send_money::create([
-            'user_id' => $request->user_id,
-            'money' => $request->money,
-        ]);
+        $sendmoneys = new Send_money();
+        $sendmoneys->user_id = auth()->id();
+        $sendmoneys->money = $request->money;
+        $sendmoneys->save();
 
-        return view('profil')->with([
-            'moneys' => $moneys,
+        return view('gallery.index')->with([
+            'sendmoneys' => $sendmoneys,
         ]);
     }
 }

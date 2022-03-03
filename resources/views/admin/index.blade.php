@@ -40,7 +40,7 @@
                                 <span class="info-box-icon bg-danger elevation-1 d-flex"><i class="fas fa-walking"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Geçirilen çäreler</span>
-                                    <span class="info-box-number">12</span>
+                                    <span class="info-box-number">{{ count($history_action) }}</span>
                                 </div>
                             </a>
                         </div>
@@ -49,7 +49,7 @@
                                 <span class="info-box-icon bg-warning elevation-1 d-flex"><i class="fas fa-book"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Blog sany</span>
-                                    <span class="info-box-number">112</span>
+                                    <span class="info-box-number">{{ count($foreign) + count($ourcountry) }}</span>
                                 </div>
                             </a>
                         </div>
@@ -58,7 +58,7 @@
                                 <span class="info-box-icon bg-green elevation-1 d-flex"><i class="fas fa-money-check-alt"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Kömek pullar</span>
-                                    <span class="info-box-number">10.0000<small>TMT</small></span>
+                                    <span class="info-box-number">10.000<small> TMT</small></span>
                                 </div>
                             </div>
                         </div>

@@ -150,6 +150,7 @@
                     - Tebigat adam üçin nämäni aňladýar? Bu - biziň dem alýan howamyz, içýän suwumyz, hasyl alýan topragymyz... Ol biziň saglygymyzyň we maddy durmuşymyzyň çeşmesidir
                 </div>
                 <form action="{{ route('sendmoney.store') }}" method="post">
+                    @csrf
                     <div class="form-item">
                         <div class="radio-item mr-lg-5 mr-md-5 mr-sm-0 mr-0">
                             <input id="1" type="radio" name="money" value="20" checked="true">
@@ -174,14 +175,9 @@
         </div>
     </div>
 
-
-
     @include ('app.footer')
 
     @include ('app.script')
-
-
-
 </body>
 
 </html>

@@ -29,9 +29,11 @@ require __DIR__ . '/auth.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
+
 //GALLERY PAGES
 Route::get('/galereya', [GalleryController::class, 'index'])->name('gallery.index');
 //GALLERY PAGES
+
 
 //CONTACT PAGES
 Route::get('/habarlasmak', [ContactController::class, 'index'])->name('contact.index');
@@ -39,35 +41,45 @@ Route::get('/habarlasmak/ugrat', [ContactController::class, 'create'])->name('co
 Route::post('/habarlasmak/ugrat', [ContactController::class, 'store'])->name('contact.store');
 //CONTACT PAGES
 
+
 //OURCOUNTRY PAGES
 Route::get('/biz-barada/yurdumyzdaky-maglumatlar', [CityController::class, 'index'])->name('ourcountry.index');
 Route::get('/biz-barada/yurdumyzdaky-maglumatlar/{id}', [CityController::class, 'show'])->name('ourcountry.show');
 //OURCOUNTRY PAGES
+
 
 //FOREIGN PAGES
 Route::get('/biz-barada/dasary-yurlardaky-maglumatlar', [ForeignController::class, 'index'])->name('foreign.index');
 Route::get('/biz-barada/dasary-yurlardaky-maglumatlar/{id}', [ForeignController::class, 'show'])->name('foreign.show');
 //FOREIGN PAGES
 
+
 //HISTORY-ACTION PAGES
 Route::get('/careler', [HistoryActionController::class, 'index'])->name('history_action.index');
 Route::get('/careler/{name}', [HistoryActionController::class, 'show'])->name('history_action.show');
 //HISTORY-ACTION PAGES
 
+
 //THREEMAIN PAGES
 Route::get('/tebigaty-gormak/{id}', [ThreemainController::class, 'show'])->name('main.show');
 //THREEMAIN PAGES
+
 
 //STATIK PAGES
 Route::get('/biz-barada', [AboutController::class, 'index'])->name('about.index');
 Route::get('/biz-barada/statistika', [AboutController::class, 'statik'])->name('about.statik');
 //STATIK PAGES
 
-Route::namespace('index')->middleware(['auth'])->group(function () {
-    Route::get('/ulanyjy-profili', [ProfilController::class, 'index'])->name('profil.index');
 
+//Send Money Page
+Route::namespace('index')->middleware(['auth'])->group(function () {
     Route::get('/pul-ugrat', [SendMoneyController::class, 'create'])->name('sendmoney.create');
     Route::post('/pul-ugrat', [SendMoneyController::class, 'store'])->name('sendmoney.store');
+});
+//Send Money Page
+
+Route::namespace('index')->middleware(['auth'])->group(function () {
+    Route::get('/ulanyjy-profili', [ProfilController::class, 'index'])->name('profil.index');
 
     Route::get('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'edit'])->name('main.edit');
     Route::post('/tebigaty-gormak/uytget/{name}', [ThreemainController::class, 'update'])->name('main.update');

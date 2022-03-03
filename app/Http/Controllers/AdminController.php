@@ -6,6 +6,7 @@ use App\Models\City;
 use App\Models\Contact;
 use App\Models\Foreign;
 use App\Models\HistoryAction;
+use App\Models\Send_money;
 use App\Models\Threemain;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -17,10 +18,18 @@ class AdminController extends Controller
     {
         $users = User::get();
         $contacts = Contact::get();
+        $history_action = HistoryAction::get();
+        $foreign = Foreign::get();
+        $ourcountry = City::get();
+        $sendmoney = Send_money::get();
 
         return view('admin.index')->with([
             'users' => $users,
             'contacts' => $contacts,
+            'history_action' => $history_action,
+            'foreign' => $foreign,
+            'ourcountry' => $ourcountry,
+            'sendmoney' => $sendmoney,
         ]);
     }
 

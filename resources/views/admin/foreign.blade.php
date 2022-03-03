@@ -14,12 +14,12 @@
 
         <div class="content-wrapper">
             <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row my-3 justify-content-between align-items-center text-center">
+                <div class="container">
+                    <div class="row my-3 justify-content-between align-items-center">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Daşary ýurtdaky täzelikler</h1>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 text-right">
                             <a href="" class="m-0 text-dark h4">
                                 <i class="fas fa-plus"></i>
                             </a>

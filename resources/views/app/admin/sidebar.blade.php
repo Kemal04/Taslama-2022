@@ -5,7 +5,16 @@
                         <img src="{{ asset('img/user.svg') }}" class="img-circle elevation-2">
                     </div>
                     <div class="info">
-                        <a href="{{ route('admin.index') }}" class="d-block text-uppercase">{{ auth()->user()->name }}</a>
+                        <a href="" class="d-block text-uppercase">{{ auth()->user()->name }}</a>
+                    </div>
+                </div>
+
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
+                    <div class="image">
+                        <i class="fas fa-home text-white"></i>
+                    </div>
+                    <div class="info">
+                        <a href="{{ route('admin.index') }}" class="d-block text-uppercase">Esasy Sahypa</a>
                     </div>
                 </div>
 

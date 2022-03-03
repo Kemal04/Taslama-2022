@@ -28,82 +28,32 @@
                     <div class="row">
                         @foreach($contacts as $contact)
                         <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row justify-content-center align-items-center text-center">
-                                        <div class="h4">
-                                            {{ $contact->name }}
-                                        </div>
-                                    </div>
-                                    <hr>
+                            <div class="card bg-light">
+                                <div class="card-header text-muted border-bottom-0">
+                                    <i class="fa fa-envelope mr-2"></i> {{ $contact->email }}
+                                </div>
+                                <div class="card-body pt-0">
                                     <div class="row">
-                                        <div class="col-sm-4">
-                                            <h6 class="mb-0">E-mail</h6>
+                                        <div class="col-7">
+                                            <h2 class="lead"><b>{{ $contact->name }}</b></h2>
+                                            <p class="text-muted text-sm"><b>Barada : </b> {{ $contact->comment }} </p>
                                         </div>
-                                        <div class="col-sm-8 text-secondary">
-                                            {{ $contact->email }}
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Teswiriň temasy</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            {{ $contact->subject }}
+                                        <div class="col-5 text-center">
+                                            <img src="{{ asset('img/user.svg') }}" alt="" class="img-circle img-fluid">
                                         </div>
                                     </div>
-                                    <hr>
-                                    <div class="row align-content-center">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Teswiriň soragy</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            {{ $contact->comment }}
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <h6 class="mb-0">Ugradylan wagty</h6>
-                                        </div>
-                                        <div class="col-lg-8 text-secondary">
-                                            {{ $contact->created_at }}
-                                        </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="text-right">
+                                        <a href="#" class="btn btn-sm bg-teal">
+                                            <i class="fa fa-comments"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         @endforeach
                     </div>
-
-
-
-                    <!-- <div class="h4">
-                        Teswirler
-                    </div>
-                    <table class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Ady</th>
-                                <th scope="col">E-mail</th>
-                                <th scope="col" width="50%">Soragy</th>
-                                <th scope="col">Ugradylan wagty</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($contacts as $contact)
-                            <tr>
-                                <th scope="row">{{ $contact->id }}</th>
-                                <td>{{ $contact->name }}</td>
-                                <td>{{ $contact->email }}</td>
-                                <td>{{ $contact->comment }}</td>
-                                <td>{{ $contact->created_at }}</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table> -->
                 </div>
             </section>
         </div>
